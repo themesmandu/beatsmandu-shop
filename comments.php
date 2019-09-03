@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package beatsmandu-shop
+ * @package Beatsmandu-shop
  */
 
 if ( post_password_required() ) {
@@ -38,7 +38,7 @@ if ( post_password_required() ) {
 			} else {
 				printf( // WPCS: XSS OK.
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $beatsmandu_shop_comment_count, 'comments title', 'bea'beatsmandu-shop'
+					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $beatsmandu_shop_comment_count, 'comments title', 'beatsmandu-shop' ) ),
 					number_format_i18n( $beatsmandu_shop_comment_count ),
 					'<span>' . get_the_title() . '</span>'
 				);
@@ -65,7 +65,7 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() ) :
 			?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'beatsmandu-shop'?></p>
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'beatsmandu-shop' ); ?></p>
 			<?php
 		endif;
 

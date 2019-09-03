@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package beatsmandu-shop
+ * @package Beatsmandu-shop
  */
 
 ?>
@@ -13,14 +13,14 @@
 // Get featured post ID.
 $beatsmandu_shop_featured_id = absint( get_theme_mod( 'post_dropdown_setting' ) );
 
-if ( empty( $beatsmandu_shop_ured_id ) ) {
+if ( empty( $beatsmandu_shop_featured_id ) ) {
 	return;
 }
 
-$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $beatsmandu_shop_ured_id ), 'full' );
+$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $beatsmandu_shop_featured_id ), 'full' );
 
 	// Getting post by ID.
-	$query = new WP_Query( 'p=' . $beatsmandu_shop_ured_id );
+	$query = new WP_Query( 'p=' . $beatsmandu_shop_featured_id );
 while ( $query->have_posts() ) :
 	$query->the_post();
 	?>

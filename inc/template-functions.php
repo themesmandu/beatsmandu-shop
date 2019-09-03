@@ -2,7 +2,7 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package beatsmandu-shop
+ * @package Beatsmandu-shop
  */
 
 /**
@@ -13,7 +13,7 @@ function beatsmandu_shop_pingback_header() {
 		echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
 	}
 }
-add_action( 'wp_head', 'beatsmandu_shop_back_header' );
+add_action( 'wp_head', 'beatsmandu_shop_pingback_header' );
 
 /**
  * Adds custom classes to the array of body classes.
@@ -21,7 +21,7 @@ add_action( 'wp_head', 'beatsmandu_shop_back_header' );
  * @param array $classes Classes for the body element.
  * @return array
  */
-function beatsmandu_shop__classes( $classes ) {
+function beatsmandu_shop_body_classes( $classes ) {
 	/* using mobile browser */
 	if ( wp_is_mobile() ) {
 		$classes[] = 'wp-is-mobile';
@@ -55,7 +55,7 @@ function beatsmandu_shop__classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'beatsmandu_shop__classes' );
+add_filter( 'body_class', 'beatsmandu_shop_body_classes' );
 
 /**
  * Adds custom classes to the array of post classes.
@@ -63,7 +63,7 @@ add_filter( 'body_class', 'beatsmandu_shop__classes' );
  * @param array $classes Classes for the article element.
  * @return array
  */
-function beatsmandu_shop__classes( $classes ) {
+function beatsmandu_shop_post_classes( $classes ) {
 	$classes[] = ( has_post_thumbnail() ? 'has-thumbnail' : 'no-thumbnail' );
 
 	if ( is_front_page() || is_home() || is_archive() ) {
@@ -80,7 +80,7 @@ function beatsmandu_shop__classes( $classes ) {
 
 	return $classes;
 }
-add_action( 'post_class', 'beatsmandu_shop__classes' );
+add_action( 'post_class', 'beatsmandu_shop_post_classes' );
 
 /**
  * Replaces "[...]" (appended to automatically generated excerpts) with ... and
@@ -89,7 +89,7 @@ add_action( 'post_class', 'beatsmandu_shop__classes' );
  * @param string $link link for link text.
  * @return string 'Continue reading' link prepended with an ellipsis.
  */
-function beatsmandu_shop_rpt_more( $link ) {
+function beatsmandu_shop_excerpt_more( $link ) {
 	if ( is_admin() ) {
 		return $link;
 	}
@@ -106,8 +106,8 @@ function beatsmandu_shop_rpt_more( $link ) {
 	}
 	return $link;
 }
-add_filter( 'excerpt_more', 'beatsmandu_shop_rpt_more' );
-add_filter( 'the_content_more_link', 'beatsmandu_shop_rpt_more' );
+add_filter( 'excerpt_more', 'beatsmandu_shop_excerpt_more' );
+add_filter( 'the_content_more_link', 'beatsmandu_shop_excerpt_more' );
 
 /**
  * Responsive Image class from Bootstrap
@@ -115,7 +115,7 @@ add_filter( 'the_content_more_link', 'beatsmandu_shop_rpt_more' );
  *
  * @param string $html responsive image class.
  */
-function beatsmandu_shop_strap_class_images( $html ) {
+function beatsmandu_shop_bootstrap_class_images( $html ) {
 	$classes = 'img-fluid'; // separated by spaces, e.g. 'img image-link'
 	// check if there are already classes assigned to the anchor.
 	if ( preg_match( '/<img.*? class="/', $html ) ) {
@@ -125,61 +125,61 @@ function beatsmandu_shop_strap_class_images( $html ) {
 	}
 	return $html;
 }
-add_filter( 'the_content', 'beatsmandu_shop_strap_class_images', 10 );
+add_filter( 'the_content', 'beatsmandu_shop_bootstrap_class_images', 10 );
 
 /**
  * Added table class from Bootstrap
  *
  * @param string $content boottrap table class.
  */
-function beatsmandu_shop_strap_table_class( $content ) {
+function beatsmandu_shop_bootstrap_table_class( $content ) {
 	return str_replace( '<table', '<table class="table"', $content );
 }
-add_filter( 'the_content', 'beatsmandu_shop_strap_table_class' );
+add_filter( 'the_content', 'beatsmandu_shop_bootstrap_table_class' );
 
 /**
  * Adds a class to the navigation links of posts
  */
-function beatsmandu_shop_s_link_attributes() {
+function beatsmandu_shop_posts_link_attributes() {
 	return 'class="btn btn-light"';
 }
-add_filter( 'next_posts_link_attributes', 'beatsmandu_shop_s_link_attributes' );
-add_filter( 'previous_posts_link_attributes', 'beatsmandu_shop_s_link_attributes' );
+add_filter( 'next_posts_link_attributes', 'beatsmandu_shop_posts_link_attributes' );
+add_filter( 'previous_posts_link_attributes', 'beatsmandu_shop_posts_link_attributes' );
 
 /**
  * Comment form container.
  */
-function beatsmandu_shop_ent_form_wrap_start() {
+function beatsmandu_shop_comment_form_wrap_start() {
 	echo '<div class="card my-4"><div class="card-body">';
 }
 
 /**
  * Comment form wrapper.
  */
-function beatsmandu_shop_ent_form_wrap_end() {
+function beatsmandu_shop_comment_form_wrap_end() {
 	echo '</div></div>';
 }
-add_action( 'comment_form_after', 'beatsmandu_shop_ent_form_wrap_end' );
-add_action( 'comment_form_before', 'beatsmandu_shop_ent_form_wrap_start' );
+add_action( 'comment_form_after', 'beatsmandu_shop_comment_form_wrap_end' );
+add_action( 'comment_form_before', 'beatsmandu_shop_comment_form_wrap_start' );
 
 /**
  * Add custom class to comment reply link.
  *
  * @param string $content comment reply link class.
  */
-function beatsmandu_shop_ent_reply_link( $content ) {
+function beatsmandu_shop_comment_reply_link( $content ) {
 	$extra_classes = 'btn btn-primary';
 	return preg_replace( '/comment-reply-link/', 'comment-reply-link ' . $extra_classes, $content );
 }
-add_filter( 'comment_reply_link', 'beatsmandu_shop_ent_reply_link', 99 );
+add_filter( 'comment_reply_link', 'beatsmandu_shop_comment_reply_link', 99 );
 
 /**
  * Custom Excerpt lengths.
  */
-function beatsmandu_shop_om_excerpt_length() {
+function beatsmandu_shop_custom_excerpt_length() {
 	return 16;
 }
-add_filter( 'excerpt_length', 'beatsmandu_shop_om_excerpt_length' );
+add_filter( 'excerpt_length', 'beatsmandu_shop_custom_excerpt_length' );
 
 /**
  * Use front-page.php when Front page displays is set to a static page.
@@ -187,7 +187,7 @@ add_filter( 'excerpt_length', 'beatsmandu_shop_om_excerpt_length' );
  * @param string $template front-page.php.
  * @return string The template to be used: blank if is_home() is true (defaults to index.php), else $template.
  */
-function beatsmandu_shop_t_page( $template ) {
+function beatsmandu_shop_front_page( $template ) {
 	return is_home() ? '' : $template;
 }
-add_filter( 'frontpage_template', 'beatsmandu_shop_t_page' );
+add_filter( 'frontpage_template', 'beatsmandu_shop_front_page' );

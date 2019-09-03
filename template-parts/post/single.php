@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package beatsmandu-shop
+ * @package Beatsmandu-shop
  */
 
 ?>
@@ -59,7 +59,7 @@ if ( get_post_type() === 'post' ) {
 
 			wp_link_pages(
 				array(
-					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'beatsmandu-shop'
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'beatsmandu-shop' ),
 					'after'  => '</div>',
 				)
 			);

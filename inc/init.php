@@ -2,7 +2,7 @@
 /**
  * Load files
  *
- * @package Beatsmandu-starter
+ * @package Beatsmandu-shop
  */
 
 /**

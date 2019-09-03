@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package beatsmandu-shop
+ * @package Beatsmandu-shop
  */
 
 $beatsmandu_shop_content = get_theme_mod( 'blog_layout' ) === 'list' ? '-list' : '';
@@ -17,7 +17,7 @@ $beatsmandu_shop_content = get_theme_mod( 'blog_layout' ) === 'list' ? '-list' :
 	 */
 
 	get_template_part(
-		'template-parts/post/preview' . $beatsmandu_shop_ent,
+		'template-parts/post/preview' . $beatsmandu_shop_content,
 		get_post_format()
 	);
 

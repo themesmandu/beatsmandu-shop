@@ -2,7 +2,7 @@
 /**
  * The template for displaying search forms
  *
- * @package Beatsmandu-starter
+ * @package Beatsmandu-shop
  */
 
 ?>

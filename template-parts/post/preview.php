@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package beatsmandu-shop
+ * @package Beatsmandu-shop
  */
 
 ?>
@@ -26,7 +26,7 @@
 			<?php beatsmandu_shop_entry_summary(); ?>
 		</div>
 		<footer class="entry-footer">
-			<?php beatsmandu_shop_y_footer(); ?>
+			<?php beatsmandu_shop_entry_footer(); ?>
 		</footer>
 	</div>
 	<?php
@@ -34,8 +34,8 @@
 		?>
 
 	<div class="entry-meta card-footer">
-			<?php beatsmandu_shop_ed_on(); ?>
-			<?php beatsmandu_shop_ed_by(); ?>
+			<?php beatsmandu_shop_posted_on(); ?>
+			<?php beatsmandu_shop_posted_by(); ?>
 	</div>
 
 		<?php

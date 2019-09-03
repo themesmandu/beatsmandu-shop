@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package beatsmandu-shop
+ * @package Beatsmandu-shop
  */
 
 /**
@@ -20,7 +20,7 @@ function beatsmandu_shop_jetpack_setup() {
 		'infinite-scroll',
 		array(
 			'container' => 'main',
-			'render'    => 'beatsmandu_shop_nite_scroll_render',
+			'render'    => 'beatsmandu_shop_infinite_scroll_render',
 			'footer'    => 'page',
 		)
 	);
@@ -48,12 +48,12 @@ function beatsmandu_shop_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'beatsmandu_shop_ack_setup' );
+add_action( 'after_setup_theme', 'beatsmandu_shop_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function beatsmandu_shop_nite_scroll_render() {
+function beatsmandu_shop_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :

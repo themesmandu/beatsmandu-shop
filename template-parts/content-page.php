@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package beatsmandu-shop
+ * @package Beatsmandu-shop
  */
 
 ?>
@@ -45,7 +45,7 @@
 				edit_post_link(
 					sprintf(
 						/* translators: %s: Name of current page */
-						__( 'Edit<span class="screen-reader-text"> "%s"</span>', 'beatsmandu-shop'
+						__( 'Edit<span class="screen-reader-text"> "%s"</span>', 'beatsmandu-shop' ),
 						get_the_title()
 					),
 					'<footer class="entry-footer"><span class="edit-link">',
