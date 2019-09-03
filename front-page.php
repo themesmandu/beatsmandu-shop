@@ -8,7 +8,7 @@
  * appear.
  * Learn more: https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Themesmandu-starter
+ * @package Beatsmandu-shop
  */
 
 get_header();

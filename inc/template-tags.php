@@ -1,10 +1,10 @@
 <?php
 /**
- * beatsmandu-shop Standalone Functions.
+ * Beatsmandu-shop Standalone Functions.
  *
  * Some of the functionality here could be replaced by core features.
  *
- * @package beatsmandu-shop
+ * @package Beatsmandu-shop
  */
 
 if ( ! function_exists( 'beatsmandu_shop_entry_summary' ) ) :
@@ -52,7 +52,7 @@ if ( ! function_exists( 'beatsmandu_shop_posted_on' ) ) :
 
 		$posted_on = sprintf(
 			/* translators: %s: post date. */
-			esc_html_x( 'Posted on %s', 'post date', 'beatsmandu-shop'
+			esc_html_x( 'Posted on %s', 'post date', 'beatsmandu-shop' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
@@ -68,7 +68,7 @@ if ( ! function_exists( 'beatsmandu_shop_posted_by' ) ) :
 	function beatsmandu_shop_posted_by() {
 		$byline = sprintf(
 			/* translators: %s: post author. */
-			esc_html_x( 'by %s', 'post author', 'beatsmandu-shop'
+			esc_html_x( 'by %s', 'post author', 'beatsmandu-shop' ),
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
 
@@ -85,17 +85,17 @@ if ( ! function_exists( 'beatsmandu_shop_entry_footer' ) ) :
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
 			/* translators: used between list items, there is a space after the comma */
-			$categories_list = get_the_category_list( esc_html__( ', ', 'beatsmandu-shop';
+			$categories_list = get_the_category_list( esc_html__( ', ', 'beatsmandu-shop' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'beatsmandu-shop' '</span>', $categories_list ); // WPCS: XSS OK.
+				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'beatsmandu-shop' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 			}
 
 			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'beatsmandu-shop';
+			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'beatsmandu-shop' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'beatsmandu-shop' '</span>', $tags_list ); // WPCS: XSS OK.
+				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'beatsmandu-shop' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 			}
 		}
 
@@ -105,7 +105,7 @@ if ( ! function_exists( 'beatsmandu_shop_entry_footer' ) ) :
 				sprintf(
 					wp_kses(
 						/* translators: %s: post title */
-						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'beatsmandu-shop'
+						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'beatsmandu-shop' ),
 						array(
 							'span' => array(
 								'class' => array(),
@@ -122,7 +122,7 @@ if ( ! function_exists( 'beatsmandu_shop_entry_footer' ) ) :
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'beatsmandu-shop'
+					__( 'Edit <span class="screen-reader-text">%s</span>', 'beatsmandu-shop' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -151,7 +151,7 @@ if ( ! function_exists( 'beatsmandu_shop_comment' ) ) :
 
 			<li id="comment-<?php comment_ID(); ?>" <?php comment_class( 'media' ); ?>>
 			<div class="comment-body">
-				<?php esc_html_e( 'Pingback:', 'beatsmandu-shop'?> <?php comment_author_link(); ?> <?php edit_comment_link( __( 'Edit', 'bea'beatsmandu-shop'an class="edit-link">', '</span>' ); ?>
+				<?php esc_html_e( 'Pingback:', 'beatsmandu-shop' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( 'Edit', 'beatsmandu-shop' ), '<span class="edit-link">', '</span>' ); ?>
 			</div>
 
 			<?php
@@ -174,7 +174,7 @@ if ( ! function_exists( 'beatsmandu_shop_comment' ) ) :
 							<h5 class="mt-0">
 							<?php
 							printf( /* translators: %s: comment author link */
-								esc_html__( '%s <span class="says">says:</span>', 'beatsmandu-shop'
+								esc_html__( '%s <span class="says">says:</span>', 'beatsmandu-shop' ),
 								sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() )
 							);
 							?>
@@ -184,19 +184,19 @@ if ( ! function_exists( 'beatsmandu_shop_comment' ) ) :
 									<time datetime="<?php comment_time( 'c' ); ?>">
 										<?php
 										printf( /* translators: %s: comment time */
-											esc_html_x( '%1$s at %2$s', '1: date, 2: time', 'beatsmandu-shop'
+											esc_html_x( '%1$s at %2$s', '1: date, 2: time', 'beatsmandu-shop' ),
 											get_comment_date(),
 											get_comment_time()
 										); // WPCS: XSS OK.
 										?>
 									</time>
 								</a>
-								<?php edit_comment_link( __( '<span style="margin-left: 5px;" class="glyphicon glyphicon-edit"></span> Edit', 'beatsmandu-shop''<span class="edit-link">', '</span>' ); ?>
+								<?php edit_comment_link( __( '<span style="margin-left: 5px;" class="glyphicon glyphicon-edit"></span> Edit', 'beatsmandu-shop' ), '<span class="edit-link">', '</span>' ); ?>
 							</div>
 						</div>
 
 						<?php if ( '0' === $comment->comment_approved ) : ?>
-							<p class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'beatsmandu-shop'?></p>
+							<p class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'beatsmandu-shop' ); ?></p>
 						<?php endif; ?>
 
 						<div class="comment-content card-block">

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Themesmandu-starter
+ * @package Beatsmandu-shop
  */
 
 the_title(
