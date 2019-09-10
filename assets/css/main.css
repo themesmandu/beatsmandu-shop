@@ -6,7 +6,8 @@ html,
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     word-break: break-word;
@@ -40,6 +41,10 @@ p {
     font-size: 17px;
     color: #282b30;
     line-height: 1.8;
+}
+
+p:last-child {
+    margin-bottom: 0;
 }
 
 figure,
@@ -144,6 +149,78 @@ table caption {
     line-height: 1.5;
 }
 
+/* -- Headings Styles -- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+/* -- Added Other Created Styles  -- */
+
+.col-count-2 {
+    column-count: 2;
+}
+
+.col-right {
+    order: -1;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.btn-uni {
+    background-color: #162a64;
+    color: #ffffff;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 24px;
+}
+
+.btn-white {
+    background-color: #ffffff;
+    color: #162a64;
+    font-weight: 600;
+}
+
+.header-content .btn:last-child {
+    margin: 0;
+}
+
+.checked {
+    background-image:  url("../images/tick.png");
+    height: 13px;
+    width: 13px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
 
 /* -- Container Styles -- */
 
@@ -156,12 +233,19 @@ table caption {
     padding: 0 15px;
 }
 
+/* -- Theme Header Styles -- */
+
+.site-header {
+    background-image: url("../images/enquiry.jpg");
+}
+
 
 /* -- Main Navigation Styles -- */
 
 .main-navigation {
     padding: 15px 0;
     z-index: 9;
+    background-color: transparent !important;
 }
 
 .main-navigation.fixed {
@@ -178,6 +262,331 @@ table caption {
     transform: translate3d(0, 70px, 0);
 }
 
+.navbar-brand {
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
 .nav-search .navbar-nav {
     margin: auto;
+}
+
+.main-navigation .menu-item{
+    margin: 0 20px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+
+.current-menu-item .nav-link {
+    border-bottom: 1px solid #ffffff;
+}
+
+/* -- Header Content Styles -- */
+
+.header-content {
+    padding:  150px 0;
+    position: relative;
+}
+
+.header-content:before {
+    content: '';
+    width: 100%;
+    height: 9px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+    left: 0;
+}
+
+.header-content .container {
+    max-width: 740px;
+}
+
+.header-heading {
+    font-size: 76px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.header-heading span {
+    font-size: 62px;
+    display: block;
+}
+
+.header-content p{
+    color: #ffffff;
+    margin: 28px 0 36px;
+}
+
+.header-content .btn {
+    margin-right: 10px;
+}
+
+/* -- Section Styles -- */
+
+section {
+    padding: 100px 0;
+}
+
+.section-heading {
+    font-size: 42px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 0 28px;
+}
+
+.clr-blk {
+    color: #29363d;
+}
+
+.clr-blu {
+    color: #162a64;
+}
+
+.clr-light {
+    color: #6a7082;
+}
+
+.bg-clr-white {
+    background-color:  #ffffff;
+}
+
+.bg-clr-grey {
+    background-color: #f8f8f8;
+}
+
+.bg-clr-blu {
+    background-color: #162a64;
+}
+
+.sec-bg-clr {
+    background-color: #e5e5ee;
+}
+
+.section-sub-heading {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: none;
+    margin: 20px 0 0;
+}
+
+.underline {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 10px;
+}
+
+.underline.bg-clr-blu {
+    padding: 10px 0 0;
+}
+
+.underline:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 3px;
+    left: 3px;
+    height: 4px;
+    background-color: #29363d;
+}
+
+.sec-image-thumbnail {
+    width: 430px;
+    max-width: 100%;
+}
+
+.thumbnail-right {
+    display: block;
+    margin-left: auto;
+}
+
+.list-check {
+    padding-left: 28px;
+}
+
+.list-check li,
+.list-check li a {
+    color: #132557;
+    margin-bottom: 10px;
+    text-indent: -28px;
+}
+
+section .btn {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 28px;
+    padding: 15px 36px;
+}
+
+/* -- Section Facilities Styles -- */
+
+.section-facilities {
+    padding: 100px 0 0;
+}
+
+.section-facilities .section-heading {
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: none;
+}
+
+.section-facilities .section-heading span {
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.section-facilities ul {
+    margin: 0;
+    padding-left: 22px;
+}
+
+.section-facilities li {
+    margin: 0 25px 15px 0;
+    text-indent: -11px;
+}
+
+.section-facilities i {
+    color: #62617e;
+    margin-right: 7px;
+}
+
+/* -- Section Features Styles -- */
+
+.section-features {
+    box-shadow: 0 0 40px rgba(27, 27, 41, 0.1);
+}
+
+.section-features .section-heading {
+    font-size: 52px;
+}
+
+.section-features .row {
+    margin: 100px -8px 0;
+}
+
+.section-features .col-center {
+    transform: scale(1.08);
+    z-index: 9;
+}
+
+.section-features .column {
+    padding: 0 8px;
+}
+
+.section-features .d-flex {
+    box-shadow: -5px -5px 25px rgba(144,144,152,.15);
+    padding: 40px;
+    transition: .2s;
+}
+
+.section-features h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3b3f4a;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.section-features .column p {
+    font-size: 15px;
+    color: #3b3f4a;
+}
+
+.section-features .column span {
+    width: 140px;;
+}
+
+.section-features i {
+    font-size: 36px;
+    color: #3a9fc9;
+}
+
+.section-features .d-flex:hover {
+    background-color: #162a64;
+}
+
+.section-features .d-flex:hover h3,
+.section-features .d-flex:hover p,
+.section-features .d-flex:hover  i {
+    color: #ffffff;
+}
+
+/* -- Section Demo Import Styles -- */
+
+.section-demo-import {
+    overflow: hidden;
+}
+
+.section-demo-import .underline:before{
+    background-color: #162a64;
+    top: -10px;
+    bottom: unset;
+}
+
+.section-demo-import .container {
+    max-width: 1565px;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.section-demo-import .section-sub-heading {
+    max-width: 580px;
+    font-weight: 400;
+}
+.section-demo-import .row {
+    margin: 0 -11px;
+}
+
+.section-demo-import .column {
+    padding: 0 11px;
+    margin-bottom: 22px;
+}
+
+/* -- Section Review Styles --*/
+
+.section-review h2 {
+    color: #ffffff;
+}
+
+.section-review .content-wrap {
+    position: relative;
+    padding-top: 100px;
+}
+
+.section-review .thumbnail-right {
+    max-width: 100%;
+    width: 670px;
+}
+
+.slide-content {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    width: 580px;
+    max-width: 100%;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-slide {
+    float: left;
+}
+
+.slick-arrow {
+    display: none !important;
+}
+
+.rev-slide img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
 }

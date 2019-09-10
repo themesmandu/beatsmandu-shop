@@ -13,19 +13,18 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<?php wp_head(); ?>
+    <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-	<div id="page" class="site">
-		<header id="top-header" class="site-header" role="banner">
-			<a class="skip-link" href="#content"><?php esc_html_e( 'To the content', 'beatsmandu-shop' ); ?></a>
+    <div id="page" class="site">
+        <header id="top-header" class="site-header" role="banner">
 
-			<?php
+            <?php
 			if ( get_theme_mod( 'menubar_mode' ) === 'alt' ) {
 				// alternative navigation bar:
 				// left: logo, main menu - right: search form or something.
@@ -45,6 +44,19 @@
 			}
 			?>
 
-		</header><!-- #masthead -->
+            <div class="header-content align-center">
+                <div class="container">
+                    <h2 class="header-heading uppercase">Sell Beats & <span> Products </span></h2>
 
-		<div id="content" class="content-wrap">
+                    <p>The Music Maker WordPress Theme is a powerful website template that allows you to sell beats,
+                        music, loops, products, and more. Join over 4,000 music creators and create a professional
+						business and brand today!</p>
+						
+					<a href="#" class="btn btn-uni">+10 Demos</a>
+					<a href="#" class="btn btn-uni btn-white">Features</a>
+                </div>
+            </div>
+
+        </header><!-- #masthead -->
+
+        <div id="content" class="content-wrap">
