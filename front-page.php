@@ -387,31 +387,51 @@ get_header();
         <div class="container">
             <div class="content-wrap">
                 <figure>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider.jpg" class="thumbnail-right" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider.jpg"
+                        class="thumbnail-right" />
                 </figure>
 
-                <div class="slide-content bg-clr-blu">
+                <div class="slide-content align-center bg-clr-blu">
                     <h2>Reviews</h2>
                     <div class="reviewslide">
                         <div class="rev-slide">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider.jpg" />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam <span>Pedro Toribio</span></p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut
+                                <span>Pedro Toribio</span>
+                            </p>
                         </div>
 
                         <div class="rev-slide">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg" />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam <span>Pedro Toribio</span></p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut
+                                <span>Pedro Toribio</span>
+                            </p>
                         </div>
 
                         <div class="rev-slide">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/beats.jpg" />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam <span>Pedro Toribio</span></p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut
+                                <span>Pedro Toribio</span>
+                            </p>
+                        </div>
+
+                        <div class="rev-slide">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/faqs.jpg" />
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut
+                                <span>Pedro Toribio</span>
+                            </p>
                         </div>
                     </div>
                 </div>

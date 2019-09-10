@@ -179,7 +179,7 @@ function beatsmandu_shop_scripts() {
 	wp_enqueue_script( 'slick-js', get_theme_file_uri( '/assets/js/slick.js' ), array(), '1.0.0', true );
 
 	// Font Montserrat (Google Font)
-	wp_enqueue_style( 'beatsmandu-shop-custom-google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap', false );
+	wp_enqueue_style( 'beatsmandu-shop-custom-google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700,800,900&display=swap', false );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

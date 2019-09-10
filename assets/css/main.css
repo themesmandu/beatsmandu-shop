@@ -552,12 +552,14 @@ section .btn {
 /* -- Section Review Styles --*/
 
 .section-review h2 {
+    font-size: 65px;
+    font-weight: 100;
     color: #ffffff;
 }
 
 .section-review .content-wrap {
     position: relative;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .section-review .thumbnail-right {
@@ -568,9 +570,10 @@ section .btn {
 .slide-content {
     position: absolute;
     top: 0;
-    left: 100px;
+    left: 150px;
     width: 580px;
     max-width: 100%;
+    padding: 50px 70px 60px;
 }
 
 .slick-list {
@@ -585,8 +588,52 @@ section .btn {
     display: none !important;
 }
 
+.rev-slide {
+    margin-top: 20px;
+}
+
 .rev-slide img {
     width: 100px;
     height: 100px;
     border-radius: 100%;
+    box-shadow: 0 0 30px rgba(0,0,0,.4);
+}
+
+.rev-slide p {
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+    color: #ffffff;
+    margin: 28px 0 0;
+}
+
+.rev-slide p span {
+    display: block;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 22px 0 0;
+}
+
+.slick-dots {
+    margin: 10px 0 0;
+}
+
+.slick-dots li {
+    font-size: 0;
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.slick-dots button {
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    background: #5a78cc;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+.slick-dots .slick-active button {
+    background: #ffffff;
 }
