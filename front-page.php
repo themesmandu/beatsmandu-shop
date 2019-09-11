@@ -294,7 +294,7 @@ get_header();
         </div>
     </section> <!-- end of .section-product-info -->
 
-    <section class="section-editor-info sec-bg-clr">
+    <section class="section-editor-info">
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
@@ -439,14 +439,13 @@ get_header();
         </div>
     </section> <!-- end of .section-review -->
 
-    <section class="section-conpare">
+    <section class="section-conpare align-center">
         <div class="container">
             <h2 class="section-heading clr-blu">
                 Feature <span class="clr-light">Comparison</span>
-                <p class="section-sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </h2>
 
-            <table>
+            <table class="table-compare mt-5">
                 <thead>
                     <tr>
                         <th>Features</th>
@@ -459,7 +458,7 @@ get_header();
                 <tbody>
                     <tr>
                         <td>AInstant Beat Downloads</td>
-                        <td><span class="tick">&#10003;</span></td>
+                        <td><span class="cross">&#10007;</span></td>
                         <td><span class="tick">&#10003;</span></td>
                         <td><span class="cross">&#10007;</span></td>
                     </tr>
@@ -529,9 +528,9 @@ get_header();
 
                     <tr>
                         <td>Marketing Graphics</td>
-                        <td><strong>90 Free Graphics</strong></td>
-                        <td><span class="tick">&#10007;</span></td>
-                        <td><span class="cross">&#10007;</span></td>
+                        <td><span>90 Free Graphics</span></td>
+                        <td><span>90 Free Graphics</span></td>
+                        <td><span>90 Free Graphics</span></td>
                     </tr>
 
                     <tr>
@@ -543,9 +542,9 @@ get_header();
 
                     <tr>
                         <td><strong>Website Hosting <span class="required">*</span></strong></td>
-                        <td>Not Included <span class="required">*</span></td>
-                        <td>Hosted ( Limited Pages )</td>
-                        <td>Hosted ( 1 Page Profile )</td>
+                        <td><span class="strong">Not Included</span></td>
+                        <td><span class="strong">Hosted ( Limited Pages )</span></td>
+                        <td><span class="strong">Hosted ( 1 Page Profile )</span></td>
                     </tr>
                 </tbody>
             </table>

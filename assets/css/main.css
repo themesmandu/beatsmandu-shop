@@ -214,11 +214,15 @@ h6 {
 }
 
 .checked {
-    background-image:  url("../images/tick.png");
+    background-image: url("../images/tick.png");
     height: 13px;
     width: 13px;
     display: inline-block;
     margin-right: 15px;
+}
+
+.required {
+    color: #ed1b2e;
 }
 
 
@@ -250,16 +254,13 @@ h6 {
 
 .main-navigation.fixed {
     position: fixed;
-    top: 15px;
+    top: -70px;
     right: 0;
     left: 0;
-    z-index: 9;
+    z-index: 99;
     transition: all 0.3s;
-}
-
-.main-navigation.fixed {
-    top: -70px;
     transform: translate3d(0, 70px, 0);
+    background-color: #222222 !important;
 }
 
 .navbar-brand {
@@ -272,7 +273,7 @@ h6 {
     margin: auto;
 }
 
-.main-navigation .menu-item{
+.main-navigation .menu-item {
     margin: 0 20px;
 }
 
@@ -290,7 +291,7 @@ h6 {
 /* -- Header Content Styles -- */
 
 .header-content {
-    padding:  150px 0;
+    padding: 150px 0;
     position: relative;
 }
 
@@ -320,7 +321,7 @@ h6 {
     display: block;
 }
 
-.header-content p{
+.header-content p {
     color: #ffffff;
     margin: 28px 0 36px;
 }
@@ -355,7 +356,7 @@ section {
 }
 
 .bg-clr-white {
-    background-color:  #ffffff;
+    background-color: #ffffff;
 }
 
 .bg-clr-grey {
@@ -400,6 +401,7 @@ section {
 .sec-image-thumbnail {
     width: 430px;
     max-width: 100%;
+    box-shadow: 0 0 40px rgba(0,0,0,.4);
 }
 
 .thumbnail-right {
@@ -481,7 +483,7 @@ section .btn {
 }
 
 .section-features .d-flex {
-    box-shadow: -5px -5px 25px rgba(144,144,152,.15);
+    box-shadow: -5px -5px 25px rgba(144, 144, 152, .15);
     padding: 40px;
     transition: .2s;
 }
@@ -500,7 +502,8 @@ section .btn {
 }
 
 .section-features .column span {
-    width: 140px;;
+    width: 140px;
+    ;
 }
 
 .section-features i {
@@ -514,7 +517,7 @@ section .btn {
 
 .section-features .d-flex:hover h3,
 .section-features .d-flex:hover p,
-.section-features .d-flex:hover  i {
+.section-features .d-flex:hover i {
     color: #ffffff;
 }
 
@@ -524,7 +527,7 @@ section .btn {
     overflow: hidden;
 }
 
-.section-demo-import .underline:before{
+.section-demo-import .underline:before {
     background-color: #162a64;
     top: -10px;
     bottom: unset;
@@ -540,6 +543,7 @@ section .btn {
     max-width: 580px;
     font-weight: 400;
 }
+
 .section-demo-import .row {
     margin: 0 -11px;
 }
@@ -547,6 +551,14 @@ section .btn {
 .section-demo-import .column {
     padding: 0 11px;
     margin-bottom: 22px;
+}
+
+/* -- Section Personal Beats Store -- */
+
+.section-editor-info {
+    background-image: url("../images/section-background.png");
+    height: 847px;
+    width: 100%;
 }
 
 /* -- Section Review Styles --*/
@@ -596,7 +608,7 @@ section .btn {
     width: 100px;
     height: 100px;
     border-radius: 100%;
-    box-shadow: 0 0 30px rgba(0,0,0,.4);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .4);
 }
 
 .rev-slide p {
@@ -632,8 +644,76 @@ section .btn {
     border: none;
     outline: none;
     padding: 0;
+    cursor: pointer;
 }
 
 .slick-dots .slick-active button {
     background: #ffffff;
+}
+
+/* -- Section Compare Styles -- */
+
+.section-conpare {
+    padding-top: 0;
+}
+
+.table-compare {
+    box-shadow: 0 0 40px rgba(0,0,0,.2);
+}
+
+.table-compare th {
+    font-size: 18px;
+    color: #4a5469;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border-bottom: 2px solid #162a64;
+    white-space: nowrap;
+}
+
+.table-compare tr th:nth-child(1),
+.table-compare tr td:nth-child(1) {
+    text-align: left;
+}
+
+.table-compare tr th:nth-child(2),
+.table-compare tr td:nth-child(2) {
+    background: #162a64;
+    color: #ffffff;
+    box-shadow: 0 0 40px rgba(0,0,0,.2);
+    border-color: #162a64;
+    padding: 10px 70px;
+}
+
+.table-compare td {
+    font-size: 14px;
+    color: #2b2d33;
+    padding: 10px 30px;
+    border-bottom: 1px solid #e8e7e7;
+}
+
+.table-compare .tick,
+.table-compare .cross {
+    font-size: 21px;
+    font-weight: 800;
+    color: #32cd32;
+}
+
+.table-compare .cross {
+    color: #ed1b2e;
+}
+
+.table-compare tr td:nth-child(2) .tick,
+.table-compare tr td:nth-child(2) .price,
+.table-compare tr td:nth-child(2) .strong {
+    color: #ffffff;
+}
+
+.table-compare .price {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.table-compare .strong {
+    font-weight: 600;
+    color: #162a64;
 }
