@@ -401,7 +401,8 @@ section {
 .sec-image-thumbnail {
     width: 430px;
     max-width: 100%;
-    box-shadow: 0 0 40px rgba(0,0,0,.4);
+    box-shadow: 0 0 40px rgba(0, 0, 0, .4);
+    cursor: pointer;
 }
 
 .thumbnail-right {
@@ -658,7 +659,7 @@ section .btn {
 }
 
 .table-compare {
-    box-shadow: 0 0 40px rgba(0,0,0,.2);
+    box-shadow: 0 0 40px rgba(0, 0, 0, .2);
 }
 
 .table-compare th {
@@ -679,7 +680,7 @@ section .btn {
 .table-compare tr td:nth-child(2) {
     background: #162a64;
     color: #ffffff;
-    box-shadow: 0 0 40px rgba(0,0,0,.2);
+    box-shadow: 0 0 40px rgba(0, 0, 0, .2);
     border-color: #162a64;
     padding: 10px 70px;
 }
@@ -717,3 +718,63 @@ section .btn {
     font-weight: 600;
     color: #162a64;
 }
+
+/* -- Image Animation To Contiunes Scroll Effests And Image Pop Up -- */
+
+.scroll-animation {
+    height: 460px;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+.scroll-animation img:active {
+    cursor: grabbing;
+}
+
+.scroll-animation:hover img {
+    animation: moveSlideshow 12s linear infinite;
+}
+
+.imageapear {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0,0,0,.7);
+}
+
+.imageapear figure {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageapear .fa-times {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #ffffff;
+}
+
+.imageapear figure img {
+    transform: scale(.8);
+    transition: .3s ease-in-out;
+}
+
+.imageapear figure img.show {
+    transform: scale(1);
+}
+
+/* @keyframes moveSlideshow {
+    100% {
+        transform: translateY(-60%);
+    }
+} */

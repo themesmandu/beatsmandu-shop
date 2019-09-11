@@ -20,7 +20,8 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg"
+                        class="thumbnail-right thumbnail-pop" />
                 </div>
 
                 <div class="col-md-6 col-right">
@@ -180,8 +181,7 @@ get_header();
                 <span class="underline clr-blu">demo</span>
                 <span class="clr-light">imports</span>
                 <p class="section-sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor
-                    incididunt ut labore et dolore</p>
+                    tempor incididunt ut labore et dolore</p>
             </h2>
 
             <div class="row mt-5">
@@ -205,8 +205,8 @@ get_header();
                     </div>
                 </div>
 
-                <div class="col-md-4 column">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg" />
+                <div class="col-md-4 column scroll-animation">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-two.png" />
                 </div>
 
                 <div class="col-md-4 column">
@@ -237,7 +237,14 @@ get_header();
             <div class="row">
                 <div class="col-md-5">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg"
-                        class="sec-image-thumbnail thumbnail-right" />
+                        class="sec-image-thumbnail thumbnail-right thumbnail-pop" />
+
+                    <div class="imageapear">
+                        <figure>
+                            <i class="fas fa-times"></i>
+                            <img src="">
+                        </figure>
+                    </div>
                 </div>
 
                 <div class="col-md-7 col-right">
@@ -269,8 +276,8 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg"
-                        class="sec-image-thumbnail" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider.jpg"
+                        class="sec-image-thumbnail thumbnail-pop" />
                 </div>
 
                 <div class="col-md-7">
@@ -299,7 +306,7 @@ get_header();
             <div class="row">
                 <div class="col-md-5">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg"
-                        class="sec-image-thumbnail thumbnail-right" />
+                        class="sec-image-thumbnail thumbnail-right thumbnail-pop" />
                 </div>
 
                 <div class="col-md-7 col-right">
@@ -329,7 +336,7 @@ get_header();
             <div class="row">
                 <div class="col-md-5">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg"
-                        class="sec-image-thumbnail" />
+                        class="sec-image-thumbnail thumbnail-pop" />
                 </div>
 
                 <div class="col-md-7">
@@ -358,7 +365,7 @@ get_header();
             <div class="row">
                 <div class="col-md-5">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg"
-                        class="sec-image-thumbnail thumbnail-right" />
+                        class="sec-image-thumbnail thumbnail-right thumbnail-pop" />
                 </div>
 
                 <div class="col-md-7 col-right">
