@@ -9,46 +9,45 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" class="single-article box-shadow">
 
-<?php
-	the_post_thumbnail(
-		'beatsmandu-shop-featured-900-600',
-		array( 'class' => 'img-fluid rounded mb-2' )
-	);
-	?>
+    <figure>
+        <?php the_post_thumbnail(); ?>
+    </figure>
 
-<div class="card-body">
+    <div class="card-body">
 
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header>
+        <div class="entry-links">
+            <?php beatsmandu_shop_entry_footer(); ?>
+        </div>
+        <header class="entry-header">
+            <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+        </header>
 
-<?php
+        <?php
 if ( get_post_type() === 'post' ) {
 	?>
-	<hr>
-		<div class="entry-meta">
-		<?php
-			beatsmandu_shop_posted_on();
+        <div class="entry-meta mb-3">
+			<?php
 			beatsmandu_shop_posted_by();
+			beatsmandu_shop_posted_on();
 		?>
-		</div>
-	<hr>
-	<?php
+        </div>
+
+        <?php
 }
 ?>
 
-	<?php
+        <?php
 	if ( has_excerpt() ) :
 		?>
-			<div class="lead"><?php the_excerpt(); ?></div>
-		<?php
+        <div class="lead"><?php the_excerpt(); ?></div>
+        <?php
 		endif;
 	?>
 
-	<div class="entry-content">
-		<?php
+        <div class="entry-content">
+            <?php
 			the_content(
 				sprintf(
 					/* translators: %s: Name of current post. Only visible to screen readers */
@@ -64,11 +63,7 @@ if ( get_post_type() === 'post' ) {
 				)
 			);
 			?>
-	</div><!-- .entry-content -->
+        </div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php beatsmandu_shop_entry_footer(); ?>
-	</footer>
-
-</div><!-- .card-body -->
+    </div><!-- .card-body -->
 </article><!-- #post-<?php the_ID(); ?> -->

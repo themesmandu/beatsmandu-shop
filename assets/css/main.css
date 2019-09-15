@@ -38,7 +38,7 @@ a:hover {
 }
 
 p {
-    font-size: 17px;
+    font-size: 15px;
     color: #282b30;
     line-height: 1.8;
 }
@@ -52,6 +52,10 @@ img,
 iframe {
     max-width: 100%;
     object-fit: cover;
+}
+
+article img {
+    height: auto;
 }
 
 ul {
@@ -194,6 +198,10 @@ h6 {
     text-transform: lowercase;
 }
 
+.ln-height-0 {
+    line-height: 0;
+}
+
 .btn-uni {
     background-color: #162a64;
     color: #ffffff;
@@ -275,6 +283,10 @@ h6 {
 
 .main-navigation .menu-item {
     margin: 0 20px;
+}
+
+.main-navigation .menu-item:last-child {
+    margin-right: 0;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -402,7 +414,6 @@ section {
     width: 430px;
     max-width: 100%;
     box-shadow: 0 0 40px rgba(0, 0, 0, .4);
-    cursor: pointer;
 }
 
 .thumbnail-right {
@@ -724,7 +735,6 @@ section .btn {
 .scroll-animation {
     height: 460px;
     overflow: hidden;
-    transform: translate3d(0, 0, 0);
 }
 
 .scroll-animation img:active {
@@ -732,7 +742,11 @@ section .btn {
 }
 
 .scroll-animation:hover img {
-    animation: moveSlideshow 12s linear infinite;
+    animation: moveSlideshow 8s linear infinite;
+}
+
+.scroll-animation:active img {
+    animation: unset;
 }
 
 .imageapear {
@@ -743,7 +757,11 @@ section .btn {
     right: 0;
     left: 0;
     z-index: 99;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0, 0, 0, .89);
+}
+
+.thumbnail-pop {
+    cursor: pointer;
 }
 
 .imageapear figure {
@@ -759,9 +777,16 @@ section .btn {
 
 .imageapear .fa-times {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 50px;
+    right: 50px;
+    font-size: 18px;
     color: #ffffff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.imageapear .fa-times:hover {
+    color: #ed1b2e;
 }
 
 .imageapear figure img {
@@ -773,8 +798,385 @@ section .btn {
     transform: scale(1);
 }
 
-/* @keyframes moveSlideshow {
+@keyframes moveSlideshow {
     100% {
         transform: translateY(-60%);
     }
-} */
+}
+
+/* -- Blog Page Styles -- */
+
+.blog #content,
+.single #content {
+    padding: 48px 0;
+}
+
+.box-shadow {
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+}
+
+.blog-article {
+    background: #ffffff;
+    margin: 0 0 32px;
+}
+
+.blog-article figure {
+    margin: 0;
+}
+
+.blog-article .attachment-post-thumbnail {
+    height: 100%;
+}
+
+.blog-article .col-content {
+    padding: 26px 15px 26px 0;
+}
+
+.entry-links {
+    margin: 0 0 10px;
+}
+
+.cat-links,
+.cat-links a,
+.tags-links,
+.tags-links a {
+    font-size: 13px;
+    font-weight: 500;
+    color: #a1aaad;
+    text-transform: uppercase;
+}
+
+.tags-links {
+    display: block;
+    margin-top: 5px;
+}
+
+.entry-title {
+    margin: 0 0 15px;
+}
+
+.entry-title a {
+    font-size: 22px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 1.5;
+}
+
+.entry-meta {
+    margin-bottom: 10px;
+}
+
+.entry-meta i {
+    color: #becbd2;
+    margin: 0 5px 0 0;
+}
+
+.entry-meta span {
+    margin: 0 15px 0 0;
+}
+
+.entry-meta a {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2a2a2a;
+    text-transform: capitalize;
+}
+
+.entry-summary p {
+    color: #373b43;
+}
+
+.entry-summary span.screen-reader-text {
+    display: none;
+}
+
+.entry-summary a {
+    font-size: 14px;
+    color: #373b43;
+}
+
+/* -- Post Navigation -- */
+
+.posts-navigation .screen-reader-text,
+.pagination .screen-reader-text {
+    display: none;
+}
+
+.posts-navigation .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.posts-navigation .nav-previous,
+.posts-navigation .nav-next {
+    line-height: 3;
+}
+
+.posts-navigation .nav-previous {
+    margin-right: auto;
+}
+
+/* -- Navigation Pagination Styles -- */
+
+.pagination,
+.comment_pagination {
+    margin-top: 32px;
+    line-height: 2;
+}
+
+
+#comments .page-numbers,
+.nav-links .page-numbers,
+.page-links,
+.page-links a {
+    font-size: 14px;
+    font-weight: 700;
+    opacity: .8;
+    padding: 2px;
+    margin: 0 10px;
+    margin-right: 10px;
+    transition: unset;
+}
+
+span.page-numbers:first-child {
+    margin-left: 0 !important;
+}
+
+span.page-numbers:hover {
+    border-bottom: 2px solid #3333333;
+}
+
+span.page-numbers.current {
+    padding: 4px 7px;
+    border: none;
+}
+
+.page-links {
+    margin: 12px 0 0;
+}
+
+/* -- Sidebar Styles -- */
+
+#sidebar .sidebar {
+    padding-left: 32px;
+    border-left: 1px solid #cecece;
+}
+
+#sidebar section:last-child {
+    margin: 0;
+}
+
+#sidebar section {
+    font-size: 14px;
+    padding: 0;
+    margin: 0 0 48px;
+}
+
+.widget-title {
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+section.widget p {
+    color: #020407;
+}
+
+.widget ul {
+    margin: 0;
+}
+
+.widget li {
+    font-size: 15px;
+    font-weight: 500;
+    color: #020407;
+    border-bottom: 1px solid #e4e7eb;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.widget li:last-child {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.widget li a {
+    font-weight: 600;
+    color: #000000;
+    padding: 0;
+}
+
+.widget li .post-date,
+.widget li .comment-author-link {
+    font-size: 13px;
+    font-weight: 600;
+    color: #505061;
+    text-transform: capitalize;
+    display: block;
+    margin: 8px 0;
+}
+
+.widget_archive li,
+.widget_archive li:last-child,
+.widget_categories li,
+.widget_categories li:last-child,
+.widget_tag_cloud a {
+    font-size: 13px;
+    display: inline-block;
+    border: 1px solid #e4e7eb;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+}
+
+.widget ul .children {
+    padding-left: 8px;
+    margin-top: 10px;
+}
+
+.widget ul .children li {
+    border: none;
+    padding: 0;
+}
+
+.widget .menu-item-has-children:after {
+    display: none;
+}
+
+.widget_search .form-title {
+    display: none;
+}
+
+.widget_tag_cloud a {
+    font-size: 13px !important;
+    margin-bottom: 4px;
+}
+
+.widget_recent_comments .recentcomments {
+    font-size: 0;
+}
+
+.widget_recent_comments li a {
+    font-size: 15px;
+}
+
+/* -- Search Form Styles -- */
+
+.form-control {
+    border-radius: 0;
+    box-shadow: none !important;
+    border-color: #e4e7eb;
+    z-index: 9;
+}
+
+.form-control:focus {
+    border-color: #e4e7eb !important;
+}
+
+.beats-search .form-control {
+    padding: 17px 10px 17px 20px;
+}
+
+.beats-search input::placeholder {
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* -- Social Icons Styles -- */
+
+.menu-social-menu-container .menu {
+    margin: 0;
+}
+
+.menu-social-menu-container .menu-item {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    text-align: center;
+    border: none;
+    padding: 0;
+    height: 40px;
+    width: 35px;
+    line-height: 40px;
+}
+
+.menu-social-menu-container .menu-item:last-child {
+    margin: 0;
+}
+
+.menu-social-menu-container .nav-link {
+    font-size: 0;
+    color: #ffffff;
+    transition: .3s;
+    height: 100%;
+}
+
+.menu-social-menu-container .menu-item a[href]:before {
+    font-family: 'Font Awesome 5 Brands';
+    content: "";
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.menu-social-menu-container .menu-item a[href*="facebook.com"] {
+    background: #3b5998;
+}
+
+.menu-social-menu-container .menu-item a[href*="facebook.com"]:before {
+    content: "\f39e";
+}
+.menu-social-menu-container .menu-item a[href*="twitter.com"] {
+    background: #55acee;
+}
+
+.menu-social-menu-container .menu-item a[href*="twitter.com"]:before {
+    content: "\f099";
+}
+
+.menu-social-menu-container .menu-item a[href*="instagram.com"] {
+    background: linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+
+.menu-social-menu-container .menu-item a[href*="instagram.com"]:before {
+    content: "\f16d";
+}
+
+.menu-social-menu-container .menu-item a[href*="youtube.com"] {
+    background: #e52d27;
+}
+
+.menu-social-menu-container .menu-item a[href*="youtube.com"]:before {
+    content: "\f167";
+}
+
+.menu-social-menu-container .menu-item a[href*="linkedin.com"] {
+    background: rgba(14, 118, 168, 1.0);
+}
+
+.menu-social-menu-container .menu-item a[href*="linkedin.com"]:before {
+    content: "\f0e1";
+}
+
+.menu-social-menu-container .menu-item a[href*="google.com"] {
+    background: #d34836;
+}
+
+.menu-social-menu-container .menu-item a[href*="google.com"]:before {
+    content: "\f0d5";
+}
+
+.menu-social-menu-container .menu-item a[href*="tumblr.com"] {
+    background: #34526f;
+}
+
+.menu-social-menu-container .menu-item a[href*="tumblr.com"]:before {
+    content: "\f173";
+}
+
+.menu-social-menu-container .menu-item a[href*="pinterest.com"] {
+    background: #bd081c;
+}
+
+.menu-social-menu-container .menu-item a[href*="pinterest.com"]:before {
+    content: "\f231";
+}

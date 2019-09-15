@@ -96,7 +96,7 @@ function beatsmandu_shop_excerpt_more( $link ) {
 	if ( get_theme_mod( 'more_link' ) ) {
 		$link  = '...';
 		$link .= sprintf(
-			'<p><a href="%1$s" class="more-link btn btn-primary">%2$s</a></p>',
+			'<p><a href="%1$s" class="more-link">%2$s</a></p>',
 			esc_url( get_permalink( get_the_ID() ) ),
 			/* translators: %2$s: Name of current post */
 			sprintf( __( '%1$s<span class="screen-reader-text">%2$s</span>', 'beatsmandu-shop' ), esc_html( get_theme_mod( 'more_link' ) ), get_the_title( get_the_ID() ) )

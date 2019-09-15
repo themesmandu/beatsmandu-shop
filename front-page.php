@@ -404,9 +404,9 @@ get_header();
                         <div class="rev-slide">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider.jpg" />
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut
+                                Lorem ipsum dolor sit amet, Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
                                 <span>Pedro Toribio</span>
                             </p>
                         </div>
@@ -417,17 +417,17 @@ get_header();
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                 exercitation ullamco laboris nisi ut
-                                <span>Pedro Toribio</span>
+                                <span>Toribio Pedro</span>
                             </p>
                         </div>
 
                         <div class="rev-slide">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/beats.jpg" />
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut
-                                <span>Pedro Toribio</span>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                                <span>Lorem ipsum</span>
                             </p>
                         </div>
 
@@ -435,9 +435,9 @@ get_header();
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/faqs.jpg" />
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut
-                                <span>Pedro Toribio</span>
+                                incididunt ut labore et dolore Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut magna aliqua.
+                                <span>Quis Nostrud</span>
                             </p>
                         </div>
                     </div>

@@ -3036,8 +3036,13 @@ jQuery(document).ready(function ($) {
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
-            autoplaySpeed: 3000,
-            dots: true
+            autoplaySpeed: 5000,
+            dots: true,
+            fade: true,
+            speed: 500,
+            infinite: true,
+            cssEase: 'ease-in-out',
+            touchThreshold: 100
         });
     });
 })
