@@ -266,7 +266,7 @@ function beatsmandu_shop_set_content_class( $class = '' ) {
 	// Define classes array.
 	$classes = array();
 
-	$classes[] = 'col-md-8';
+	$classes[] = 'col-lg-8';
 
 	// Centered.
 	if ( ! is_active_sidebar( 'sidebar-1' ) || get_theme_mod( 'sidebar_position' ) === 'none' ) {

@@ -23,8 +23,8 @@
 <body <?php body_class(); ?>>
     <div id="page" class="site">
         <header id="top-header" class="site-header" role="banner">
-
-            <?php
+            <div class="header-wrap">
+                <?php
 			if ( get_theme_mod( 'menubar_mode' ) === 'alt' ) {
 				// alternative navigation bar:
 				// left: logo, main menu - right: search form or something.
@@ -35,6 +35,12 @@
 				get_template_part( 'template-parts/navigation/main-navbar' );
 			}
 
+			//header page title.
+			beatsmandu_shop_header_page_title();
+			?>
+            </div>
+
+            <?php
 			// Header Image.
 			the_custom_header_markup();
 
@@ -44,18 +50,20 @@
 			}
 			?>
 
+            <?php if ( is_front_page() && ! is_home() ) : ?>
             <div class="header-content align-center">
                 <div class="container">
                     <h2 class="header-heading uppercase">Sell Beats & <span> Products </span></h2>
 
                     <p>The Music Maker WordPress Theme is a powerful website template that allows you to sell beats,
                         music, loops, products, and more. Join over 4,000 music creators and create a professional
-						business and brand today!</p>
-						
-					<a href="#" class="btn btn-uni">+10 Demos</a>
-					<a href="#" class="btn btn-uni btn-white">Features</a>
+                        business and brand today!</p>
+
+                    <a href="#" class="btn btn-uni br-round">+10 Demos</a>
+                    <a href="#" class="btn btn-uni btn-white br-round">Features</a>
                 </div>
             </div>
+            <?php endif; ?>
 
         </header><!-- #masthead -->
 

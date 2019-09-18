@@ -144,6 +144,21 @@ function beatsmandu_shop_widgets_init() {
 			'after_title'   => '</h5>',
 		)
 	);
+
+	for ( $i = 1; $i <= 4; $i++ ) {
+		register_sidebar(
+			array(
+				/* translators: %d: footer widget number. */
+				'name'          => sprintf( esc_html__( 'Footer Widgets %d', 'beatsmandu-shop' ), $i ),
+				'id'            => 'footer-' . $i,
+				'description'   => esc_html__( 'Add widgets here.', 'beatsmandu-shop' ),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</div>',
+				'before_title'  => '<h3 class="widget-title">',
+				'after_title'   => '</h3>',
+			)
+		);
+	}
 }
 add_action( 'widgets_init', 'beatsmandu_shop_widgets_init' );
 
@@ -197,3 +212,6 @@ function wildspirit_add_classes_on_link_attributes( $classes ) {
 	return $classes;
 }
 add_filter( 'nav_menu_link_attributes', 'wildspirit_add_classes_on_link_attributes' );
+
+/** Post Widget with images **/
+require get_template_directory().'/inc/post_widget.php';

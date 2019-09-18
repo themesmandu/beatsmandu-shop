@@ -74,7 +74,7 @@ if ( post_password_required() ) {
 	comment_form(
 		array(
 			'class_form'    => 'comment-form',
-			'class_submit'  => 'btn btn-primary',
+			'class_submit'  => 'btn btn-uni',
 			'comment_field' => '<div class="form-group"><textarea id="comment" class="form-control" name="comment" cols="45" rows="8" aria-required="true"></textarea></div>',
 		)
 	);

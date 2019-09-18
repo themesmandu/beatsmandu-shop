@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" class="single-article box-shadow">
 
-    <figure>
+    <figure class="m-0">
         <?php the_post_thumbnail(); ?>
     </figure>
 

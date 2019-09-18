@@ -21,7 +21,7 @@ get_header();
             <div class="row">
                 <div class="col-md-6">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg"
-                        class="thumbnail-right thumbnail-pop" />
+                        class="thumbnail-right" />
                 </div>
 
                 <div class="col-md-6 col-right">
@@ -237,7 +237,7 @@ get_header();
             <div class="row">
                 <div class="col-md-5">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg"
-                        class="sec-image-thumbnail thumbnail-right thumbnail-pop" />
+                        class="sec-image-thumbnail thumbnail-right" />
 
                     <div class="imageapear">
                         <figure>
@@ -277,7 +277,7 @@ get_header();
             <div class="row">
                 <div class="col-md-5">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider.jpg"
-                        class="sec-image-thumbnail thumbnail-pop" />
+                        class="sec-image-thumbnail" />
                 </div>
 
                 <div class="col-md-7">
@@ -295,7 +295,7 @@ get_header();
                         <li><i class="checked"></i>Display Related Products</li>
                         <li><i class="checked"></i>Sort Products by Category</li>
                     </ul>
-                    <a href="#" class="btn btn-uni">view store</a>
+                    <a href="#" class="btn btn-uni br-round">view store</a>
                 </div>
             </div>
         </div>
@@ -306,7 +306,7 @@ get_header();
             <div class="row">
                 <div class="col-md-5">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg"
-                        class="sec-image-thumbnail thumbnail-right thumbnail-pop" />
+                        class="sec-image-thumbnail thumbnail-right" />
                 </div>
 
                 <div class="col-md-7 col-right">
@@ -325,7 +325,7 @@ get_header();
                         <li><i class="checked"></i>Product Store</li>
                         <li><i class="checked"></i>Page Animations</li>
                     </ul>
-                    <a href="#" class="btn btn-uni">view store</a>
+                    <a href="#" class="btn btn-uni br-round">view store</a>
                 </div>
             </div>
         </div>
@@ -336,7 +336,7 @@ get_header();
             <div class="row">
                 <div class="col-md-5">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg"
-                        class="sec-image-thumbnail thumbnail-pop" />
+                        class="sec-image-thumbnail" />
                 </div>
 
                 <div class="col-md-7">
@@ -354,7 +354,7 @@ get_header();
                         <li><i class="checked"></i>Testimonials</li>
                         <li><i class="checked"></i>Production Credits and more</li>
                     </ul>
-                    <a href="#" class="btn btn-uni">view store</a>
+                    <a href="#" class="btn btn-uni br-round">view store</a>
                 </div>
             </div>
         </div>
@@ -365,7 +365,7 @@ get_header();
             <div class="row">
                 <div class="col-md-5">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg"
-                        class="sec-image-thumbnail thumbnail-right thumbnail-pop" />
+                        class="sec-image-thumbnail thumbnail-right" />
                 </div>
 
                 <div class="col-md-7 col-right">
@@ -384,7 +384,7 @@ get_header();
                         <li><i class="checked"></i><a href="#">Photos / Videos</a></li>
                         <li><i class="checked"></i><a href="#">Music Blog</a></li>
                     </ul>
-                    <a href="#" class="btn btn-uni">view store</a>
+                    <a href="#" class="btn btn-uni br-round">view store</a>
                 </div>
             </div>
         </div>
