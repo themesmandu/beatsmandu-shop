@@ -151,6 +151,16 @@ table caption {
     line-height: 1.5;
 }
 
+/* -- Content Styles -- */
+
+#content {
+    padding: 48px 0;
+}
+
+.home #content {
+    padding: 0;
+}
+
 /* -- Headings Styles -- */
 
 h1,
@@ -232,6 +242,34 @@ h6 {
 
 .required {
     color: #ed1b2e;
+}
+
+.bold-3 {
+    font-weight: 300;
+}
+
+.bold-4 {
+    font-weight: 400;
+}
+
+.bold-5 {
+    font-weight: 500;
+}
+
+.bold-6 {
+    font-weight: 600;
+}
+
+.bold-7 {
+    font-weight: 700;
+}
+
+.bold-8 {
+    font-weight: 800;
+}
+
+.bold-9 {
+    font-weight: 900;
 }
 
 
@@ -828,11 +866,6 @@ section .btn {
 
 /* -- Blog Page Styles -- */
 
-.blog #content,
-.single #content {
-    padding: 48px 0;
-}
-
 .box-shadow {
     box-shadow: 0 0 30px rgba(0, 0, 0, .2);
 }
@@ -1338,4 +1371,13 @@ section.widget p {
 .single-post .navigation .next_post figure {
     order: 1;
     margin: 0 0 0 20px;
+}
+
+/* -- Easy Digital Download Styles -- */
+
+.edd-checkout .card,
+.edd-checkout .card-body,
+#edd_checkout_form_wrap fieldset {
+    border: none;
+    padding: 0;
 }

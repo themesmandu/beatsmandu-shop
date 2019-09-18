@@ -424,7 +424,8 @@ get_header();
                         <div class="rev-slide">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/beats.jpg" />
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, Ut enim ad minim veniam, quis nostrud
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, Ut enim ad minim veniam, quis
+                                nostrud
                                 exercitation ullamco laboris nisi ut sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua.
                                 <span>Lorem ipsum</span>
@@ -555,6 +556,9 @@ get_header();
                     </tr>
                 </tbody>
             </table>
+
+            <?php echo do_shortcode('[purchase_link id="924" text="Purchase" style="button" direct="true"]'); ?>
+
         </div>
     </section> <!-- end of .section-conpare -->
 </div> <!-- end of .front-page-sections -->

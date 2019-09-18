@@ -42,7 +42,7 @@ if ( ! function_exists( 'beatsmandu_shop_header_page_title' ) ) :
 </div>
 <?php
 
-elseif ( is_singular() ) :
+elseif ( is_single() ) :
     ?>
 <div class="page-content">
     <div class="container">
