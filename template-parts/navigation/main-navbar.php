@@ -55,5 +55,7 @@
 		);
 		?>
 
+		<a href="#" class="btn-uni btn-white br-round ml-4">Buy Now</a>
+
 	</div>
 </nav>
