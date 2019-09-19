@@ -23,6 +23,13 @@ jQuery(document).ready(function ($) {
         });
     }
 
+    // Smooth Scrolling For Buy Button To Its Content
+
+    $('.btn-buynow').click(function(event) {
+        event.preventDefault();
+        $('html,body').animate( { scrollTop:$(this.hash).offset().top } , 1000);
+     });
+
     // To top Java Script
 
     $(window).scroll(function () {
@@ -76,5 +83,9 @@ jQuery(document).ready(function ($) {
             $('.imageapear figure img').removeClass('show');
         }
     });
+
+    // Remove Content Div From 404 Page
+
+    $('.error404 div').remove('#content');
 
 });

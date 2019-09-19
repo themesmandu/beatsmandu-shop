@@ -19,12 +19,12 @@ get_header();
     <section class="section-facilities">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-5">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg"
                         class="thumbnail-right" />
                 </div>
 
-                <div class="col-md-6 col-right">
+                <div class="col-lg-6 col-md-7 col-right">
                     <h2 class="section-heading clr-blk">
                         Creat a Professional
                         <span class="uppercase clr-blu">website</span>
@@ -447,7 +447,7 @@ get_header();
         </div>
     </section> <!-- end of .section-review -->
 
-    <section class="section-conpare align-center">
+    <section id="buytheme" class="section-compare align-center">
         <div class="container">
             <h2 class="section-heading clr-blu">
                 Feature <span class="clr-light">Comparison</span>
@@ -560,7 +560,7 @@ get_header();
             <?php echo do_shortcode('[purchase_link id="924" text="Purchase" style="button" direct="true"]'); ?>
 
         </div>
-    </section> <!-- end of .section-conpare -->
+    </section> <!-- end of .section-compare -->
 </div> <!-- end of .front-page-sections -->
 
 <?php

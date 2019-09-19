@@ -180,6 +180,9 @@ function beatsmandu_shop_scripts() {
 	// Loading main stylesheet.
 	wp_enqueue_style( 'main-css', get_theme_file_uri( '/assets/css/main.css' ), array( 'beatsmandu-shop-style' ), wp_get_theme()->get( 'Version' ) );
 
+	// Loading mediascreen stylesheet.
+	wp_enqueue_style( 'mediascreen-css', get_theme_file_uri( '/assets/css/mediascreen.css' ), array( 'beatsmandu-shop-style' ), wp_get_theme()->get( 'Version' ) );
+
 	// Add font-awesome fonts, used in the main stylesheet.
 	wp_enqueue_style( 'beatsmandu-shop-font-awesome', get_theme_file_uri( '/assets/font-awesome-5.7.2/css/all.css' ), array( 'beatsmandu-shop-style' ), '5.7.2' );
 

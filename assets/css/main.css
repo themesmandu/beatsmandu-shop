@@ -272,6 +272,7 @@ h6 {
 }
 
 
+
 /* -- Container Styles -- */
 
 .container {
@@ -336,6 +337,15 @@ h6 {
 
 .current-menu-item .nav-link {
     border-bottom: 1px solid #ffffff;
+}
+
+.btn-buynow {
+    padding: 10px 24px;
+    margin-left: 40px;
+}
+
+.btn-mob {
+    display: none;
 }
 
 /* -- Header Content Styles -- */
@@ -665,6 +675,7 @@ section .btn {
 
 .slick-slide {
     float: left;
+    z-index: 9 !important;
 }
 
 .slick-arrow {
@@ -724,7 +735,7 @@ section .btn {
 
 /* -- Section Compare Styles -- */
 
-.section-conpare {
+.section-compare {
     padding-top: 0;
 }
 
@@ -1183,7 +1194,6 @@ section.widget p {
     border-radius: 0;
     box-shadow: none !important;
     border-color: #e4e7eb;
-    z-index: 9;
 }
 
 .form-control:focus {
@@ -1469,13 +1479,53 @@ section.widget p {
     padding: 50px 0;
 }
 
-/* -- Easy Digital Download Styles -- */
+/* -- Other Pagges ( Search Page, 404 Page, Nothing Found) -- */
 
-body.edd-checkout #sidebar {
+body.search .page-content .header-heading,
+.error404 .page-content .header-heading {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+body.search #content {
+    padding: 0;
+}
+
+body.search .container {
+    max-width: 810px;
+}
+
+body.search .beats-search {
+    margin-top: 20px;
+}
+
+body.search .form-title {
+    font-size: 22px;
+    color: #62617e;
+}
+
+.error404 {
+    color: #ffffff;
+}
+
+.error404 .page-content {
+    padding: 175px 0;
+}
+
+.error404 #content {
     display: none;
 }
 
-body.edd-checkout #primary {
+
+/* -- Easy Digital Download Styles -- */
+
+body.edd-checkout #sidebar,
+body.edd-success #sidebar {
+    display: none;
+}
+
+body.edd-checkout #primary,
+body.edd-success #primary {
     margin: 0 auto;
 }
 

@@ -1,0 +1,27 @@
+@media (max-width: 991px) {
+    .btn-buynow {
+        display: none;
+    }
+
+    .btn-mob {
+        display: block;
+    }
+
+    .section-facilities .section-heading {
+        font-size: 28px;
+    }
+
+    .section-facilities .section-heading span {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-right {
+        order: unset;
+    }
+
+    .thumbnail-right {
+        margin: 0;
+    }
+}
