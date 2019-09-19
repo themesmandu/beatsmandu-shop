@@ -557,7 +557,8 @@ get_header();
                 </tbody>
             </table>
 
-            <?php echo do_shortcode('[purchase_link id="924" text="Purchase" style="button" direct="true"]'); ?>
+            <a href="<?php echo home_url(); ?>/checkout?edd_action=add_to_cart&download_id=14">Purchase This</a>
+            
 
         </div>
     </section> <!-- end of .section-conpare -->
