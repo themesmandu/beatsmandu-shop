@@ -60,7 +60,7 @@ class beatsmandu_shop_post_widget_class extends WP_Widget {
 						<?php endif; ?>
 						<h4>
 							<a href="<?php echo get_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
-							<span class="post-date"><?php echo get_the_date( '', $recent_post->ID ); ?></span>
+							<span class="post-date"><?php echo get_the_date(); ?></span>
 						</h4>
 					</div>
 

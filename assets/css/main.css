@@ -274,7 +274,9 @@ h6 {
     font-weight: 900;
 }
 
-
+.card {
+    border-radius: 0;
+}
 
 /* -- Container Styles -- */
 
@@ -1342,6 +1344,10 @@ section.widget p {
     padding: 0;
 }
 
+.widget .current-menu-item .nav-link {
+    border: none;
+}
+
 .widget .post-date,
 .widget .comment-author-link {
     font-size: 13px;
@@ -1483,6 +1489,7 @@ section.widget p {
     content: "";
     font-size: 16px;
     font-weight: 900;
+    margin: 0;
 }
 
 .menu-social-menu-container .menu-item a[href*="facebook.com"] {
@@ -1694,7 +1701,7 @@ section.widget p {
     font-weight: 500;
 }
 
-#footer .widget_nav_menu #menu-footer-menu a:before {
+.widget_nav_menu a:before {
     font-family: 'Font Awesome\ 5 Free';
     content: "\f0da";
     font-weight: 900;

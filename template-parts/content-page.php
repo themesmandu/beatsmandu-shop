@@ -9,13 +9,13 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>">
 
 <?php
 	the_post_thumbnail(
 		'beatsmandu-shop-featured-900-600',
 		array(
-			'class' => 'img-fluid rounded mb-2',
+			'class' => 'img-fluid mb-2',
 		)
 	);
 	?>
