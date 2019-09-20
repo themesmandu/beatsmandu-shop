@@ -57,121 +57,123 @@ get_header();
                 </p>
             </h2>
 
-            <div class="row">
-                <div class="col-md-4 column">
-                    <div class="d-flex align-items-center bg-clr-grey">
-                        <span><i class="fas fa-music"></i></span>
-                        <div class="content">
-                            <h3>Beat Store</h3>
-                            <p>The built-in beat store allows you to add unlimited beats and set your own prices.
-                            </p>
+            <div class="feature-row">
+                <div class="row">
+                    <div class="col-md-4 column">
+                        <div class="d-flex align-items-center bg-clr-grey">
+                            <span><i class="fas fa-music"></i></span>
+                            <div class="content">
+                                <h3>Beat Store</h3>
+                                <p>The built-in beat store allows you to add unlimited beats and set your own prices.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center bg-clr-white">
+                            <span><i class="fas fa-download"></i></span>
+                            <div class="content">
+                                <h3>Instant Beats Downloads</h3>
+                                <p>The built-in beat store allows you to add unlimited beats and set your own prices.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center bg-clr-grey">
+                            <span><i class="far fa-money-bill-alt"></i></span>
+                            <div class="content">
+                                <h3>Instant Payments</h3>
+                                <p>The built-in beat store allows you to add unlimited beats and set your own prices.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center bg-clr-white">
+                            <span><i class="far fa-newspaper"></i></span>
+                            <div class="content">
+                                <h3>Unlimited Content</h3>
+                                <p>The built-in beat store allows you to add unlimited beats and set your own prices.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="d-flex align-items-center bg-clr-white">
-                        <span><i class="fas fa-download"></i></span>
-                        <div class="content">
-                            <h3>Instant Beats Downloads</h3>
-                            <p>The built-in beat store allows you to add unlimited beats and set your own prices.
-                            </p>
+                    <div class="col-md-4 column col-center">
+                        <div class="d-flex align-items-center bg-clr-white">
+                            <span><i class="fas fa-mobile-alt"></i></span>
+                            <div class="content">
+                                <h3>Mobile Ready</h3>
+                                <p>The built-in beat store allows you to add unlimited beats and set your own prices.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center bg-clr-grey">
+                            <span><i class="fas fa-percentage"></i></span>
+                            <div class="content">
+                                <h3>Discounts & Coupons</h3>
+                                <p>The built-in beat store allows you to add unlimited beats and set your own prices.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center bg-clr-white">
+                            <span><i class="fas fa-code"></i></span>
+                            <div class="content">
+                                <h3>Custom CSS</h3>
+                                <p>The built-in beat store allows you to add unlimited beats and set your own prices.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center bg-clr-grey">
+                            <span><i class="far fa-play-circle"></i></span>
+                            <div class="content">
+                                <h3>Track Beat Plays</h3>
+                                <p>The built-in beat store allows you to add unlimited beats and set your own prices.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="d-flex align-items-center bg-clr-grey">
-                        <span><i class="far fa-money-bill-alt"></i></span>
-                        <div class="content">
-                            <h3>Instant Payments</h3>
-                            <p>The built-in beat store allows you to add unlimited beats and set your own prices.
-                            </p>
+                    <div class="col-md-4 column">
+                        <div class="d-flex align-items-center bg-clr-white">
+                            <span><i class="far fa-file-alt"></i></span>
+                            <div class="content">
+                                <h3>Music Contracts</h3>
+                                <p>The built-in beat store allows you to add unlimited beats and set your own prices.
+                                </p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="d-flex align-items-center bg-clr-white">
-                        <span><i class="far fa-newspaper"></i></span>
-                        <div class="content">
-                            <h3>Unlimited Content</h3>
-                            <p>The built-in beat store allows you to add unlimited beats and set your own prices.
-                            </p>
+                        <div class="d-flex align-items-center bg-clr-white">
+                            <span><i class="fab fa-wordpress-simple"></i></span>
+                            <div class="content">
+                                <h3>Add Plugins</h3>
+                                <p>The built-in beat store allows you to add unlimited beats and set your own prices.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="col-md-4 column col-center">
-                    <div class="d-flex align-items-center bg-clr-white">
-                        <span><i class="fas fa-mobile-alt"></i></span>
-                        <div class="content">
-                            <h3>Mobile Ready</h3>
-                            <p>The built-in beat store allows you to add unlimited beats and set your own prices.
-                            </p>
+                        <div class="d-flex align-items-center bg-clr-grey">
+                            <span><i class="far fa-envelope"></i></span>
+                            <div class="content">
+                                <h3>Capture Emails</h3>
+                                <p>The built-in beat store allows you to add unlimited beats and set your own prices.
+                                </p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="d-flex align-items-center bg-clr-grey">
-                        <span><i class="fas fa-percentage"></i></span>
-                        <div class="content">
-                            <h3>Discounts & Coupons</h3>
-                            <p>The built-in beat store allows you to add unlimited beats and set your own prices.
-                            </p>
+                        <div class="d-flex align-items-center bg-clr-white">
+                            <span><i class="fas fa-search"></i></span>
+                            <div class="content">
+                                <h3>SEO Friendly</h3>
+                                <p>The built-in beat store allows you to add unlimited beats and set your own prices.
+                                </p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="d-flex align-items-center bg-clr-white">
-                        <span><i class="fas fa-code"></i></span>
-                        <div class="content">
-                            <h3>Custom CSS</h3>
-                            <p>The built-in beat store allows you to add unlimited beats and set your own prices.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex align-items-center bg-clr-grey">
-                        <span><i class="far fa-play-circle"></i></span>
-                        <div class="content">
-                            <h3>Track Beat Plays</h3>
-                            <p>The built-in beat store allows you to add unlimited beats and set your own prices.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 column">
-                    <div class="d-flex align-items-center bg-clr-white">
-                        <span><i class="far fa-file-alt"></i></span>
-                        <div class="content">
-                            <h3>Music Contracts</h3>
-                            <p>The built-in beat store allows you to add unlimited beats and set your own prices.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex align-items-center bg-clr-white">
-                        <span><i class="fab fa-wordpress-simple"></i></span>
-                        <div class="content">
-                            <h3>Add Plugins</h3>
-                            <p>The built-in beat store allows you to add unlimited beats and set your own prices.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex align-items-center bg-clr-grey">
-                        <span><i class="far fa-envelope"></i></span>
-                        <div class="content">
-                            <h3>Capture Emails</h3>
-                            <p>The built-in beat store allows you to add unlimited beats and set your own prices.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex align-items-center bg-clr-white">
-                        <span><i class="fas fa-search"></i></span>
-                        <div class="content">
-                            <h3>SEO Friendly</h3>
-                            <p>The built-in beat store allows you to add unlimited beats and set your own prices.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- end of row -->
+                </div> <!-- end of row -->
+            </div> <!-- end of feature-row -->
         </div> <!-- end of container -->
     </section> <!-- end of .section-features -->
 
@@ -185,45 +187,48 @@ get_header();
             </h2>
 
             <div class="row mt-5">
-                <div class="col-md-4 column">
+                <div class="col-lg-4 column scroll-animation">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-two.png" />
+                </div>
+
+                <div class="col-lg-4 col-md-6 column col-right">
                     <div class="row">
-                        <div class="col-md-6 column">
+
+                        <div class="col-lg-6 column">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg" />
                         </div>
 
-                        <div class="col-md-6 column">
+                        <div class="col-lg-6 column">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg" />
                         </div>
 
-                        <div class="col-md-6 column">
+                        <div class="col-lg-6 column">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg" />
                         </div>
 
-                        <div class="col-md-6 column">
+                        <div class="col-lg-6 column">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg" />
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4 column scroll-animation">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-two.png" />
-                </div>
 
-                <div class="col-md-4 column">
+
+                <div class="col-lg-4 col-md-6 column">
                     <div class="row">
-                        <div class="col-md-6 column">
+                        <div class="col-lg-6 column">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg" />
                         </div>
 
-                        <div class="col-md-6 column">
+                        <div class="col-lg-6 column">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg" />
                         </div>
 
-                        <div class="col-md-6 column">
+                        <div class="col-lg-6 column">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg" />
                         </div>
 
-                        <div class="col-md-6 column">
+                        <div class="col-lg-6 column">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg" />
                         </div>
                     </div>
@@ -447,7 +452,7 @@ get_header();
         </div>
     </section> <!-- end of .section-review -->
 
-    <section id="buytheme" class="section-compare align-center">
+    <section class="section-compare align-center">
         <div class="container">
             <h2 class="section-heading clr-blu">
                 Feature <span class="clr-light">Comparison</span>
@@ -556,12 +561,74 @@ get_header();
                     </tr>
                 </tbody>
             </table>
-
-            <a href="<?php echo home_url(); ?>/checkout?edd_action=add_to_cart&download_id=14">Purchase This</a>
-            
-
         </div>
     </section> <!-- end of .section-compare -->
+
+    <section id="buytheme" class="section-purchase">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 column">
+                    <h2 class="section-heading clr-blu">
+                        Get it now & start your own <span class="clr-light">Business</span>
+                    </h2>
+
+                    <p class="section-sub-heading">Our template will help you sell beats, products, and make money.
+                        Don't spend thousands of dollars hiring a coder to create a site.</p>
+
+                    <h3 class="clr-light">Sell 1 Beat & It Pays For Itself</h3>
+
+                    <p class="section-sub-heading">Over 40,000 costumers satisfied</p>
+                </div> <!-- end of .column -->
+
+                <div class="col-md-6 column">
+                    <div class="column-purchase align-center">
+                        <span class="price bold-8 clr-white">$55</span>
+                        <ul class="list-check">
+                            <li>
+                                <i class="checked"></i>
+                                90 Free Marketing Graphics
+                            </li>
+
+                            <li>
+                                <i class="checked"></i>
+                                Add unlimited beats
+                            </li>
+
+                            <li>
+                                <i class="checked"></i>
+                                Instant Payments
+                            </li>
+
+                            <li>
+                                <i class="checked"></i>
+                                Access to training videos
+                            </li>
+
+                            <li>
+                                <i class="checked"></i>
+                                Single Site License
+                            </li>
+
+                            <li>
+                                <i class="checked"></i>
+                                All Theme Features
+                            </li>
+
+                            <li>
+                                <i class="checked"></i>
+                                12 Months of Updates
+                            </li>
+                        </ul>
+                        <a href="<?php echo home_url(); ?>/checkout?edd_action=add_to_cart&download_id=924"
+                            class="btn-purchase btn-uni bold-7">Purchase This</a>
+
+                        <p>Both paypal And Credit card accepted</p>
+                    </div>
+                </div> <!-- end of .column -->
+            </div> <!-- end of .row -->
+        </div> <!-- end of .container -->
+    </section> <!-- end of .section-purchase -->
 </div> <!-- end of .front-page-sections -->
 
 <?php

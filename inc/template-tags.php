@@ -148,11 +148,10 @@ if ( ! function_exists( 'beatsmandu_shop_comment' ) ) :
         <div class="media-body">
             <div class="media-body-wrap card">
                 <div class="card-header">
-                    /* translators: %s: comment author link */
                     <h5 class="mt-0">
                         <?php
 							printf( /* translators: %s: comment author link */
-								esc_html__( '%s <span class="says">says:</span>', 'beatsmandu-shop' ),
+								__( '%s <span class="says">says:</span>', 'beatsmandu-shop' ),
 								sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() )
 							);
 							?>

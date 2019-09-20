@@ -44,7 +44,8 @@ p {
 }
 
 p:last-child,
-.post-widget:last-child {
+.post-widget:last-child.col-right,
+.section-demo-import .column .column:last-child {
     margin-bottom: 0;
 }
 
@@ -84,6 +85,7 @@ select,
 
 input[type="submit"] {
     font-size: 14px;
+    font-weight: 600;
     background: #2e5ea2;
     color: #ffffff;
     width: auto;
@@ -92,6 +94,7 @@ input[type="submit"] {
     line-height: 1;
     text-transform: uppercase;
     transition: .3s;
+    border-radius: 0;
 }
 
 input[type="submit"]:hover,
@@ -314,6 +317,7 @@ h6 {
     font-size: 32px;
     font-weight: 600;
     color: #ffffff;
+    margin: 0;
 }
 
 .nav-search .navbar-nav {
@@ -436,6 +440,10 @@ section {
     color: #6a7082;
 }
 
+.clr-white {
+    color: #ffffff;
+}
+
 .bg-clr-white {
     background-color: #ffffff;
 }
@@ -492,6 +500,7 @@ section {
 
 .list-check {
     padding-left: 28px;
+    margin: 0;
 }
 
 .list-check li,
@@ -625,20 +634,25 @@ section .btn {
     font-weight: 400;
 }
 
-.section-demo-import .row {
+.section-demo-import .row .row {
     margin: 0 -11px;
 }
 
-.section-demo-import .column {
+.section-demo-import .column .column {
     padding: 0 11px;
+    margin-bottom: 22px;
+}
+
+.section-demo-import .scroll-animation {
     margin-bottom: 22px;
 }
 
 /* -- Section Personal Beats Store -- */
 
-.section-editor-info {
+.section-editor-info,
+.section-purchase {
     background-image: url("../images/section-background.png");
-    height: 847px;
+    background-position: bottom;
     width: 100%;
 }
 
@@ -773,6 +787,10 @@ section .btn {
     border-bottom: 1px solid #e8e7e7;
 }
 
+.table-compare td strong {
+    white-space: nowrap;
+}
+
 .table-compare .tick,
 .table-compare .cross {
     font-size: 21px;
@@ -872,6 +890,48 @@ section .btn {
     100% {
         transform: translateY(-60%);
     }
+}
+
+/* -- Section Purchase Styles -- */
+
+.section-purchase h3 {
+    margin: 26px 0;
+}
+
+.column-purchase {
+    box-shadow: 0px 17px 37px 0px rgba(26, 38, 74, 0.25);
+    padding: 42px;
+    background-color: rgba(22, 42, 100, 1);
+}
+
+.column-purchase .price {
+    font-size: 52px;
+}
+
+.column-purchase  ul {
+    margin: 22px 0 0;
+    padding: 0;
+}
+
+.column-purchase li {
+    color: #cccccc;
+    margin-bottom: 18px;
+}
+
+.column-purchase .checked {
+    background-image: url("../images/tick-white.png");
+}
+
+.btn-purchase {
+    display: inline-block;
+    margin-top: 38px;
+    background-color: #cccccc;
+    color: #162a64;
+}
+
+.column-purchase p {
+    color: #ffffff;
+    margin-top: 32px;
 }
 
 /* -- Blog Page Styles -- */
@@ -996,29 +1056,202 @@ section .btn {
 .page-links,
 .page-links a {
     font-size: 14px;
-    font-weight: 700;
-    opacity: .8;
-    padding: 2px;
-    margin: 0 10px;
-    margin-right: 10px;
+    font-weight: 600;
+    color: #2e5ea2;
+    margin-right: 20px;
     transition: unset;
 }
 
-span.page-numbers:first-child {
-    margin-left: 0 !important;
+.next.page-numbers {
+    margin-right: 0 !important;
 }
 
 span.page-numbers:hover {
     border-bottom: 2px solid #3333333;
 }
 
+#comments span.page-numbers.current,
 span.page-numbers.current {
     padding: 4px 7px;
     border: none;
+    background-color: #162a64;
+    color: #ffffff;
 }
 
 .page-links {
     margin: 12px 0 0;
+}
+
+/* -- Comment Form Styles -- */
+
+#comments {
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    padding: 32px;
+    margin-top: 42px;
+}
+
+.comment-wrap {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 26px;
+    margin-bottom: 32px;
+}
+
+.comments-title,
+#reply-title {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#comments .comment-notes {
+    font-size: 16px;
+    letter-spacing: .5px;
+}
+
+#main .comment article {
+    margin: 0;
+}
+
+#comments ol {
+    padding: 0;
+    list-style-type: none;
+}
+
+#comments .comment-list ol {
+    padding-left: 26px;
+}
+
+#comments li {
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 1px solid #eeeeee;
+}
+
+#comments li:last-child {
+    padding-bottom: 0;
+}
+
+.comment-author.vcard {
+    margin-bottom: 20px;
+}
+
+.comment-meta img {
+    margin-right: 5px;
+}
+
+.comment-meta .fn,
+.comment-meta .fn a,
+.bypostauthor {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1d3962;
+    text-transform: capitalize;
+}
+
+.comment-meta .says {
+    display: none;
+}
+
+.comment-meta .comment-metadata,
+.comment-meta .comment-metadata a {
+    font-size: 12px;
+    color: rgba(247, 99, 27, 0.7);
+    display: inline-block;
+}
+
+.comment-content {
+    margin-bottom: 15px;
+}
+
+.comment-content p {
+    color: #1d3962;
+    line-height: 1.7;
+    margin-bottom: 5px;
+}
+
+.comment-reply-link,
+#cancel-comment-reply-link {
+    font-size: 10px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 5px 12px;
+    text-transform: uppercase;
+    opacity: .8;
+    letter-spacing: .5px;
+    display: inline-block;
+}
+
+.comment-reply-link:hover {
+    opacity: 1;
+    color: #ffffff;
+}
+
+.comment-awaiting-moderation {
+    font-size: 12px;
+    font-style: normal;
+    margin: 10px 0;
+    display: block;
+    background: #4460af;
+    color: #ffffff;
+    padding: 10px 15px;
+}
+
+.comment_pagination {
+    background-color: rgba(22, 42, 100, .06);
+    padding: 5px 15px;
+}
+
+#respond {
+    max-width: 790px;
+    width: 100%;
+}
+
+#commentform .required {
+    color: #dd1e26;
+}
+
+.comment-form-comment {
+    margin-bottom: 26px;
+}
+
+.comment-respond p.comment-form-author,
+.comment-respond p.comment-form-email {
+    width: calc(50% - 10px);
+    display: inline-block;
+    margin: 0 0 26px;
+}
+
+.comment-respond p.comment-form-email {
+    margin-left: 2%;
+}
+
+.comment-form-url {
+    width: 49%;
+    margin-bottom: 26px;
+}
+
+#commentform .comment-form-cookies-consent {
+    display: flex;
+    margin: 32px 0;
+}
+
+#commentform .comment-form-cookies-consent input {
+    width: 20px;
+    margin: auto 0;
+}
+
+#commentform .comment-form-cookies-consent label {
+    margin: auto 0 auto 5px;
+    text-transform: none;
+}
+
+#respond #reply-title small {
+    display: block;
+    margin: 10px 0;
+}
+
+#cancel-comment-reply-link {
+    background: #dd1e26;
+    padding: 8px 12px;
 }
 
 /* -- Sidebar Styles -- */
@@ -1172,14 +1405,18 @@ section.widget p {
     margin-bottom: 26px;
 }
 
+.post-widget-img {
+    width: 25%;
+}
+
 .post-widget-img img {
-    width: 80px;
     height: 80px;
 }
 
 .post-widget h4 {
-    width: 71%;
-    margin: auto 0 auto auto;
+    width: 75%;
+    margin: auto 0;
+    padding-left: 15px;
     text-transform: capitalize;
 }
 
@@ -1217,7 +1454,7 @@ section.widget p {
 
 .menu-social-menu-container .menu-item {
     display: inline-block;
-    margin: 0 10px 0 0;
+    margin: 0 10px 10px 0;
     text-align: center;
     border: none;
     padding: 0;
@@ -1226,9 +1463,12 @@ section.widget p {
     line-height: 40px;
 }
 
-.menu-social-menu-container .menu-item:last-child,
-#footer .menu-social-menu-container .menu-item:last-child {
+.menu-social-menu-container .menu-item:last-child {
     margin: 0;
+}
+
+#footer .menu-social-menu-container .menu-item:last-child {
+    margin: 0 0 10px 0;
 }
 
 .menu-social-menu-container .nav-link {
@@ -1418,11 +1658,11 @@ section.widget p {
 }
 
 #footer .widget li {
-    border-color: rgba(255,255,255,.3);
+    border-color: rgba(255, 255, 255, .3);
 }
 
 #footer p,
-#footer .widget li a, 
+#footer .widget li a,
 #footer .post-widget a {
     font-size: 14px;
     color: #dddddd;
@@ -1434,7 +1674,7 @@ section.widget p {
 
 #footer-menu li a {
     font-size: 14px;
-    color: rgba(255,255,255,.4);
+    color: rgba(255, 255, 255, .4);
 }
 
 #footer .menu-social-menu-container .menu-item {
@@ -1474,7 +1714,7 @@ section.widget p {
     color: #ffffff;
 }
 
-.footer_content_wrap  {
+.footer_content_wrap {
     border-top: 1px solid #4f5154;
     padding: 50px 0;
 }
@@ -1495,6 +1735,10 @@ body.search .container {
     max-width: 810px;
 }
 
+section.no-results {
+    padding: 0;
+}
+
 body.search .beats-search {
     margin-top: 20px;
 }
@@ -1502,6 +1746,10 @@ body.search .beats-search {
 body.search .form-title {
     font-size: 22px;
     color: #62617e;
+}
+
+body.search .page-header.pb-4 {
+    display: none;
 }
 
 .error404 {
@@ -1533,7 +1781,7 @@ body.edd-success #primary {
 .edd-checkout .card-body,
 #edd_checkout_form_wrap fieldset,
 .edd-success .card,
-.edd-success .card-body{
+.edd-success .card-body {
     border: none;
     padding: 0;
 }

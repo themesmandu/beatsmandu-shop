@@ -146,21 +146,6 @@ function beatsmandu_shop_posts_link_attributes() {
 add_filter( 'next_posts_link_attributes', 'beatsmandu_shop_posts_link_attributes' );
 add_filter( 'previous_posts_link_attributes', 'beatsmandu_shop_posts_link_attributes' );
 
-/**
- * Comment form container.
- */
-function beatsmandu_shop_comment_form_wrap_start() {
-	echo '<div class="card my-4"><div class="card-body">';
-}
-
-/**
- * Comment form wrapper.
- */
-function beatsmandu_shop_comment_form_wrap_end() {
-	echo '</div></div>';
-}
-add_action( 'comment_form_after', 'beatsmandu_shop_comment_form_wrap_end' );
-add_action( 'comment_form_before', 'beatsmandu_shop_comment_form_wrap_start' );
 
 /**
  * Add custom class to comment reply link.
@@ -168,7 +153,7 @@ add_action( 'comment_form_before', 'beatsmandu_shop_comment_form_wrap_start' );
  * @param string $content comment reply link class.
  */
 function beatsmandu_shop_comment_reply_link( $content ) {
-	$extra_classes = 'btn btn-primary';
+	$extra_classes = 'btn-uni';
 	return preg_replace( '/comment-reply-link/', 'comment-reply-link ' . $extra_classes, $content );
 }
 add_filter( 'comment_reply_link', 'beatsmandu_shop_comment_reply_link', 99 );
