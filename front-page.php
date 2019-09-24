@@ -568,62 +568,34 @@ get_header();
 
         <div class="container">
             <div class="row">
-                <div class="col-md-6 column">
+                <div class="column">
                     <h2 class="section-heading clr-blu">
-                        Get it now & start your own <span class="clr-light">Business</span>
+                        Get it now & <span>start your Business</span>
                     </h2>
 
                     <p class="section-sub-heading">Our template will help you sell beats, products, and make money.
                         Don't spend thousands of dollars hiring a coder to create a site.</p>
-
-                    <h3 class="clr-light">Sell 1 Beat & It Pays For Itself</h3>
-
-                    <p class="section-sub-heading">Over 40,000 costumers satisfied</p>
+                    <h3 class="bg-blue btn-uni br-round bold-5">Sell 1 Beat & It Pays For Itself</h3>
+                    <h6 class="clr-blu font-italic bold-8">Over 40,000 costumers satisfied</h6>
+                    
                 </div> <!-- end of .column -->
 
-                <div class="col-md-6 column">
+                <div class="column">
                     <div class="column-purchase align-center">
-                        <span class="price bold-8 clr-white">$55</span>
+                        <span class="price bold-8 clr-blu">$55</span>
                         <ul class="list-check">
-                            <li>
-                                <i class="checked"></i>
-                                90 Free Marketing Graphics
-                            </li>
-
-                            <li>
-                                <i class="checked"></i>
-                                Add unlimited beats
-                            </li>
-
-                            <li>
-                                <i class="checked"></i>
-                                Instant Payments
-                            </li>
-
-                            <li>
-                                <i class="checked"></i>
-                                Access to training videos
-                            </li>
-
-                            <li>
-                                <i class="checked"></i>
-                                Single Site License
-                            </li>
-
-                            <li>
-                                <i class="checked"></i>
-                                All Theme Features
-                            </li>
-
-                            <li>
-                                <i class="checked"></i>
-                                12 Months of Updates
-                            </li>
+                            <li>90 Free Marketing Graphics</li>
+                            <li>Add unlimited beats</li>
+                            <li>Instant Payments</li>
+                            <li>Access to training videos</li>
+                            <li>Single Site License</li>
+                            <li>All Theme Features</li>
+                            <li>12 Months of Updates</li>
                         </ul>
                         <a href="<?php echo home_url(); ?>/checkout?edd_action=add_to_cart&download_id=924"
-                            class="btn-purchase btn-uni bold-7">Purchase This</a>
+                            class="btn-purchase btn-uni bold-7 br-round">Purchase This</a>
 
-                        <p>Both paypal And Credit card accepted</p>
+                        <p class="clr-blu bold-5">Both paypal And Credit card accepted</p>
                     </div>
                 </div> <!-- end of .column -->
             </div> <!-- end of .row -->

@@ -651,14 +651,17 @@ section .btn {
 
 /* -- Section Personal Beats Store -- */
 
-.section-editor-info,
-.section-purchase {
+.section-editor-info {
     background-image: url("../images/section-background.png");
     background-position: bottom;
     width: 100%;
 }
 
 /* -- Section Review Styles --*/
+
+.section-review .container {
+    max-width: 990px;
+}
 
 .section-review h2 {
     font-size: 65px;
@@ -671,15 +674,16 @@ section .btn {
     padding-top: 80px;
 }
 
-.section-review .thumbnail-right {
+.section-review figure {
     max-width: 100%;
     width: 670px;
+    margin: 0 0 0 auto;
 }
 
 .slide-content {
     position: absolute;
     top: 0;
-    left: 150px;
+    left: 0;
     width: 580px;
     max-width: 100%;
     padding: 50px 70px 60px;
@@ -896,18 +900,63 @@ section .btn {
 
 /* -- Section Purchase Styles -- */
 
+.section-purchase .row {
+    align-items: center;
+}
+
+.section-purchase .section-heading {
+    font-size: 54px;
+    font-weight: 900;
+}
+
+.section-purchase .section-heading span {
+    font-size: 38px;
+    font-weight: 800;
+    display: block;
+}
+
+.section-purchase .column {
+    padding: 0 15px;
+}
+
+.section-purchase .column:first-child {
+    padding-right: 120px;
+    width: 52%;
+}
+
+.section-purchase .column:last-child {
+    width: 48%;
+    position: relative;
+}
+
+.section-purchase .column:last-child:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 15px;
+    left: 15px;
+    border: 18px solid #5b6992;
+}
+
 .section-purchase h3 {
-    margin: 26px 0;
+    font-size: 18px;
+    text-transform: unset;
+    display: inline-block;
+    margin: 46px 0 26px;
+    padding: 22px 62px;
 }
 
 .column-purchase {
+    background-color: #ffffff;
     box-shadow: 0px 17px 37px 0px rgba(26, 38, 74, 0.25);
+    position: relative;
     padding: 42px;
-    background-color: rgba(22, 42, 100, 1);
+    margin: -36px 68px;
 }
 
 .column-purchase .price {
-    font-size: 52px;
+    font-size: 90px;
 }
 
 .column-purchase  ul {
@@ -916,7 +965,7 @@ section .btn {
 }
 
 .column-purchase li {
-    color: #cccccc;
+    color: #222222;
     margin-bottom: 18px;
 }
 
@@ -926,14 +975,14 @@ section .btn {
 
 .btn-purchase {
     display: inline-block;
-    margin-top: 38px;
-    background-color: #cccccc;
-    color: #162a64;
+    margin-top: 16px;
+    padding: 15px 32px;
+    background-color: #34363b;
 }
 
 .column-purchase p {
-    color: #ffffff;
-    margin-top: 32px;
+    font-size: 14px;
+    margin-top: 16px;
 }
 
 /* -- Blog Page Styles -- */
