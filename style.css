@@ -193,16 +193,16 @@ figcaption,
     padding: 0px;
     width: 35px;
     height: 40px;
-    transition: 0.5s;
     border-radius: 0;
     border: 1px solid #ffffff;
     outline: none !important;
     transition: all .3s;
     transform: translate3d(100px, 0, 0);
+    cursor: pointer;
 }
 
 #up-btn:hover {
-    background: #3381f2;
+    background: #645016;
 }
 
 .up-btn:focus {

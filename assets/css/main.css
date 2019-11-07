@@ -220,6 +220,11 @@ h6 {
     padding: 12px 24px;
 }
 
+.btn-uni:hover {
+    background: #645016;
+    color: #ffffff;
+}
+
 .btn-uni.br-round {
     border-radius: 50px;
 }
@@ -430,32 +435,43 @@ section {
     margin: 0 0 28px;
 }
 
-.clr-blk {
+.clr-blk,
+.hvr-clr-blk:hover {
     color: #29363d;
 }
 
-.clr-blu {
+.clr-blu,
+.hvr-clr-blu:hover {
     color: #162a64;
 }
 
-.clr-light {
+.clr-light,
+.hvr-clr-light:hover {
     color: #6a7082;
 }
 
-.clr-white {
+.clr-white,
+.hvr-clr-white:hover {
     color: #ffffff;
 }
 
-.bg-clr-white {
+.bg-clr-white,
+.hvr-bg-white:hover {
     background-color: #ffffff;
 }
 
-.bg-clr-grey {
+.bg-clr-grey,
+.hvr-bg-grey:hover {
     background-color: #f8f8f8;
 }
 
-.bg-clr-blu {
+.bg-clr-blu,
+.hvr-bg-blue:hover {
     background-color: #162a64;
+}
+
+.hvr-bg-blue:hover {
+    color: #ffffff;
 }
 
 .sec-bg-clr {
@@ -634,15 +650,6 @@ section .btn {
 .section-demo-import .section-sub-heading {
     max-width: 580px;
     font-weight: 400;
-}
-
-.section-demo-import .row .row {
-    margin: 0 -11px;
-}
-
-.section-demo-import .column .column {
-    padding: 0 11px;
-    margin-bottom: 22px;
 }
 
 .section-demo-import .scroll-animation {
@@ -940,11 +947,11 @@ section .btn {
 }
 
 .section-purchase h3 {
-    font-size: 18px;
+    font-size: 16px;
     text-transform: unset;
     display: inline-block;
     margin: 46px 0 26px;
-    padding: 22px 62px;
+    padding: 16px 32px;
 }
 
 .column-purchase {

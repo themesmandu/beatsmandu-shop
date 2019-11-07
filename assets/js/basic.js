@@ -25,10 +25,12 @@ jQuery(document).ready(function ($) {
 
     // Smooth Scrolling For Buy Button To Its Content
 
-    $('.btn-buynow').click(function(event) {
+    $('.btn-buynow').click(function (event) {
         event.preventDefault();
-        $('html,body').animate( { scrollTop:$(this.hash).offset().top } , 1000);
-     });
+        $('html,body').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 1000);
+    });
 
     // To top Java Script
 
@@ -50,23 +52,26 @@ jQuery(document).ready(function ($) {
 
     var y, top, down;
 
-    $('.scroll-animation').mousedown(function (e) {
-        e.preventDefault();
-        down = true;
-        y = e.pageY;
-        top = $(this).scrollTop();
-    });
+    for (let index = 1; index < 4; index++) {
 
-    $('body').mousemove(function (e) {
-        if (down) {
-            var scrollY = e.pageY;
-            $(".scroll-animation").scrollTop(top - scrollY + y);
-        }
-    });
+        $('.scroll-' + index).mousedown(function (e) {
+            e.preventDefault();
+            down = true;
+            y = e.pageY;
+            top = $(this).scrollTop();
+        });
 
-    $('body').mouseup(function (e) {
-        down = false;
-    });
+        $('.scroll-' + index).mousemove(function (e) {
+            if (down) {
+                var scrollY = e.pageY;
+                $('.scroll-' + index).scrollTop(top - scrollY + y);
+            }
+        });
+
+        $('.scroll-' + index).mouseup(function (e) {
+            down = false;
+        });
+    }
 
     // Image pop up
 

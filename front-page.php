@@ -179,51 +179,16 @@ get_header();
 			</h2>
 
 			<div class="row mt-5">
-				<div class="col-lg-4 column scroll-animation">
+				<div class="col-lg-4 column scroll-animation scroll-1">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-two.png" />
 				</div>
 
-				<div class="col-lg-4 col-md-6 column col-right">
-					<div class="row">
-
-						<div class="col-lg-6 column">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg" />
-						</div>
-
-						<div class="col-lg-6 column">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg" />
-						</div>
-
-						<div class="col-lg-6 column">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg" />
-						</div>
-
-						<div class="col-lg-6 column">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg" />
-						</div>
-					</div>
+				<div class="col-lg-4 column scroll-animation scroll-2">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-two.png" />
 				</div>
 
-
-
-				<div class="col-lg-4 col-md-6 column">
-					<div class="row">
-						<div class="col-lg-6 column">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg" />
-						</div>
-
-						<div class="col-lg-6 column">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg" />
-						</div>
-
-						<div class="col-lg-6 column">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg" />
-						</div>
-
-						<div class="col-lg-6 column">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg" />
-						</div>
-					</div>
+				<div class="col-lg-4 column scroll-animation scroll-3">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-two.png" />
 				</div>
 			</div>
 		</div>
