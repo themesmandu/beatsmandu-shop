@@ -34,11 +34,6 @@ if ( is_user_logged_in() ) {
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php
-/* Get Sidebar #secondary */
-get_sidebar();
-?>
-
 	</div><!-- /.row -->
 </div><!-- /.container -->
 
