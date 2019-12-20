@@ -50,7 +50,7 @@ if ( ! function_exists( 'beatsmandu_shop_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'primary' => esc_html__( 'Primary', 'beatsmandu-shop' ),
+				'primary'     => esc_html__( 'Primary', 'beatsmandu-shop' ),
 				'footer-menu' => esc_html__( 'Footer Menu', 'beatsmandu-shop' ),
 			)
 		);
@@ -207,6 +207,31 @@ function beatsmandu_shop_scripts() {
 add_action( 'wp_enqueue_scripts', 'beatsmandu_shop_scripts' );
 
 /**
+ * Add extra items in menu
+ *
+ * @since 1.0.0
+ *
+ * @param array $items item to b added.
+ * @param object $args args object.
+ */
+
+function beatsmandu_shop_add_menu_item( $items, $args ) {
+	if ( class_exists( 'Easy_Digital_Downloads' ) ) {
+		if ( 'primary' === $args->theme_location ) {
+			if ( is_user_logged_in() ) {
+				$items .= '<li class= "logged-in menu-item"><a class="nav-link" href = ' . home_url() . '/my-account>My Account</a></li>';
+			} else {
+				$items .= '<li class= "logged-in menu-item"><a class="nav-link" href = ' . home_url() . '/my-account>Sign Up</a></li>';
+			}
+		}
+	}
+	return $items;
+}
+if ( get_theme_mod( 'mainmenu_cart_toggle', true ) ) {
+	add_filter( 'wp_nav_menu_items', 'beatsmandu_shop_add_menu_item', 10, 2 );
+}
+
+/**
  * Load theme required files.
  */
 require get_template_directory() . '/inc/init.php';
@@ -218,4 +243,6 @@ function wildspirit_add_classes_on_link_attributes( $classes ) {
 add_filter( 'nav_menu_link_attributes', 'wildspirit_add_classes_on_link_attributes' );
 
 /** Post Widget with images **/
-require get_template_directory().'/inc/post_widget.php';
+require get_template_directory() . '/inc/post_widget.php';
+
+
