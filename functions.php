@@ -218,10 +218,14 @@ add_action( 'wp_enqueue_scripts', 'beatsmandu_shop_scripts' );
 function beatsmandu_shop_add_menu_item( $items, $args ) {
 	if ( class_exists( 'Easy_Digital_Downloads' ) ) {
 		if ( 'primary' === $args->theme_location ) {
+			$class = '';
+			if ( is_page( 'my-account' ) ) {
+				$class = 'current-menu-item';
+			}
 			if ( is_user_logged_in() ) {
-				$items .= '<li class= "logged-in menu-item"><a class="nav-link" href = ' . home_url() . '/my-account>My Account</a></li>';
+				$items .= '<li class= "logged-in menu-item ' . $class . '"><a class="nav-link" href = ' . home_url() . '/my-account>My Account</a></li>';
 			} else {
-				$items .= '<li class= "logged-in menu-item"><a class="nav-link" href = ' . home_url() . '/my-account>Sign Up</a></li>';
+				$items .= '<li class= "logged-in menu-item ' . $class . '"><a class="nav-link" href = ' . home_url() . '/my-account>Sign Up</a></li>';
 			}
 		}
 	}
