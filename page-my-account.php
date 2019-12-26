@@ -20,8 +20,21 @@ get_header();
 
 <?php
 if ( is_user_logged_in() ) {
+	?>
+	<div class="purchase-history">
+		<h3>Purchase History</h3>
+	<?php
 	echo do_shortcode( '[purchase_history]' );
+	?>
+	</div>
+	
+	<div class="download-history">
+		<h3>Download History</h3>
+		<?php
 	echo do_shortcode( '[download_history]' );
+	?>
+	</div>
+	<?php
 } else {
 	?>
 	<div class="col-md-6">
