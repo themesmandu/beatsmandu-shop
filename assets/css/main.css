@@ -838,12 +838,12 @@ section .btn {
     overflow: hidden;
 }
 
-.scroll-animation img:active {
-    cursor: grabbing;
+.scroll-animation img {
+    cursor: grab;
 }
 
-.scroll-animation:hover img {
-    animation: moveSlideshow 8s linear infinite;
+.scroll-animation img:active {
+    cursor: grabbing;
 }
 
 .scroll-animation:active img {
@@ -966,7 +966,7 @@ section .btn {
     font-size: 90px;
 }
 
-.column-purchase  ul {
+.column-purchase ul {
     margin: 22px 0 0;
     padding: 0;
 }
@@ -1694,6 +1694,69 @@ section.widget p {
 .single-post .navigation .next_post figure {
     order: 1;
     margin: 0 0 0 20px;
+}
+
+/* -- Account Page Styles -- */
+
+.edd-pages h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.edd-pages legend {
+    font-weight: 800;
+    color: #162a64;
+    text-transform: uppercase;
+}
+
+.edd-pages form p {
+    margin-bottom: 22px;
+}
+
+.edd-pages label {
+    line-height: 1;
+}
+
+.edd-pages input {
+    padding: 10px 15px;
+}
+
+#rememberme {
+    width: auto;
+    vertical-align: middle;
+}
+
+#edd-purchase-button,
+.edd-submit,
+[type=submit].edd-submit {
+    font-weight: 500;
+    padding: 10px 12px;
+    background-color: #162a64;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+#edd-purchase-button:hover,
+.edd-submit:hover,
+[type=submit].edd-submit:hover {
+    background-color: #645016;
+}
+
+.col-login {
+    padding-left: 60px;
+}
+
+.col-register {
+    padding-right: 60px;
+}
+
+.purchase-history {
+    margin-bottom: 45px;
+}
+
+#edd_user_history td, #edd_user_history th {
+    padding: 7px;
 }
 
 /* -- Footer Styles -- */
