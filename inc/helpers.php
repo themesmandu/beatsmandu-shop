@@ -24,7 +24,7 @@ if ( ! function_exists( 'beatsmandu_shop_header_page_title' ) ) :
 	function beatsmandu_shop_header_page_title() {
 		if ( is_front_page() ) :
 			return;
-		elseif ( is_home() || is_singular() ) :
+		elseif ( is_home() || is_singular() && ! is_page( 'my-account' ) ) :
 			?>
 <div class="page-content">
 	<div class="container">
