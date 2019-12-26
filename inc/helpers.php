@@ -39,15 +39,6 @@ if ( ! function_exists( 'beatsmandu_shop_header_page_title' ) ) :
 		<h1 class="header-heading uppercase"><?php the_archive_title(); ?></h1>
 	</div>
 </div>
-			<?php
-
-elseif ( is_single() ) :
-	?>
-<div class="page-content">
-	<div class="container">
-		<h1 class="header-heading uppercase"><?php esc_html__( 'Single Blog', 'beatsmandu-shop' ); ?></h1>
-	</div>
-</div>
 	<?php
 		elseif ( is_search() ) :
 			?>
@@ -80,11 +71,11 @@ elseif ( is_single() ) :
 			<?php
 			if ( is_user_logged_in() ) {
 				?>
-		<h1 class="header-heading uppercase"><?php esc_html__( 'My Account', 'beatsmandu-shop' ); ?></h1>
+		<h1 class="header-heading uppercase"><?php echo esc_html__( 'My Account', 'beatsmandu-shop' ); ?></h1>
 				<?php
 			} else {
 				?>
-		<h1 class="header-heading uppercase"><?php esc_html__( 'Register/Login', 'beatsmandu-shop' ); ?></h1>
+		<h1 class="header-heading uppercase"><?php echo esc_html__( 'Register/Login', 'beatsmandu-shop' ); ?></h1>
 				<?php
 			}
 			?>
