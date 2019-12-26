@@ -123,6 +123,11 @@
         width: 88%;
     }
 
+    .col-login,
+    .col-register {
+        padding: 0 15px
+    }
+
     #footer-widgets {
         max-width: 500px;
         margin: auto;
