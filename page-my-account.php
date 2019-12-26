@@ -16,7 +16,7 @@ get_header();
 ?>
 
 <div class="container">
-		<main id="main" class="site-main row">
+		<main id="main" class="site-main <?php echo is_user_logged_in() ? '' : 'row'; ?>">
 
 <?php
 if ( is_user_logged_in() ) {
@@ -31,8 +31,8 @@ if ( is_user_logged_in() ) {
 	<div class="download-history">
 		<h3>Download History</h3>
 		<?php
-	echo do_shortcode( '[download_history]' );
-	?>
+		echo do_shortcode( '[download_history]' );
+		?>
 	</div>
 	<?php
 } else {
