@@ -16,25 +16,29 @@ get_header();
 ?>
 
 <div class="container">
-	<div class="row">
-
-	<div id="primary" class="content-area<?php beatsmandu_shop_content_class(); ?>">
-		<main id="main" class="site-main">
+		<main id="main" class="site-main row">
 
 <?php
 if ( is_user_logged_in() ) {
 	echo do_shortcode( '[purchase_history]' );
 	echo do_shortcode( '[download_history]' );
 } else {
+	?>
+	<div class="col-md-6">
+	<?php
 	echo do_shortcode( '[edd_register]' );
+	?>
+	</div>
+	<div class="col-md-6">
+	<?php
 	echo do_shortcode( '[edd_login]' );
+	?>
+	</div>
+	<?php
 }
 ?>
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
-
-	</div><!-- /.row -->
 </div><!-- /.container -->
 
 <?php
