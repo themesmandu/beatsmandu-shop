@@ -52,6 +52,7 @@ if ( ! function_exists( 'beatsmandu_shop_setup' ) ) :
 			array(
 				'primary'     => esc_html__( 'Primary', 'beatsmandu-shop' ),
 				'footer-menu' => esc_html__( 'Footer Menu', 'beatsmandu-shop' ),
+				'social'      => esc_html__( 'Social Menu', 'beatsmandu-shop' ),
 			)
 		);
 
