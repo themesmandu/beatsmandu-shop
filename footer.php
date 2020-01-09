@@ -47,6 +47,23 @@
 			);
 		endif;
 		?>
+
+            <?php
+			if ( has_nav_menu( 'social' ) ) :
+				wp_nav_menu(
+					array(
+						'theme_location' => 'social',
+						'menu_id'        => 'social-menu',
+						'menu_class'     => 'footer-social-nav',
+					)
+				);
+			endif;
+			?>
+
+            <div class="site-info">
+                <?php echo wp_kses_post( get_theme_mod( 'footer_copyright' ) ); ?>
+            </div><!-- .site-info -->
+
         </div>
     </div><!-- .container -->
     <button class="up-btn" id="up-btn" title="<?php echo esc_html( __( 'Go to top', 'ghumgham' ) ); ?>"
