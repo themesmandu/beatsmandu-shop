@@ -297,7 +297,7 @@ h6 {
 /* -- Theme Header Styles -- */
 
 .site-header {
-    background-image: url("../images/enquiry.jpg");
+    background-image: url("../images/banner.jpg");
 }
 
 
@@ -378,11 +378,11 @@ h6 {
 }
 
 .header-content .container {
-    max-width: 740px;
+    max-width: 755px;
 }
 
 .header-heading {
-    font-size: 76px;
+    font-size: 64px;
     font-weight: 900;
     color: #ffffff;
 }
@@ -633,6 +633,8 @@ section .btn {
 
 .section-demo-import {
     overflow: hidden;
+    box-shadow: 0 40px 60px rgba(27, 27, 41, 0.1);
+
 }
 
 .section-demo-import .underline:before {
@@ -1755,7 +1757,8 @@ section.widget p {
     margin-bottom: 45px;
 }
 
-#edd_user_history td, #edd_user_history th {
+#edd_user_history td,
+#edd_user_history th {
     padding: 7px;
 }
 
@@ -2080,4 +2083,27 @@ table#edd_purchase_receipt_products .edd_download_file {
     color: #ffffff;
     display: block;
     line-height: 1.5;
+}
+
+#edd_terms_agreement .edd-terms-agreement,
+#edd-privacy-policy-agreement .edd-privacy-policy-agreement {
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+}
+
+#edd_purchase_submit input[type=checkbox],
+#edd_checkout_form_wrap input[type=radio] {
+    width: auto;
+}
+
+#edd_checkout_form_wrap #edd_terms_agreement,
+#edd_checkout_form_wrap #edd-privacy-policy-agreement {
+    margin-bottom: 15px;
+}
+
+#edd_terms_agreement label,
+#edd-privacy-policy-agreement label {
+    text-transform: capitalize;
+    margin: 0;
 }
