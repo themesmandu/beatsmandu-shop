@@ -185,15 +185,15 @@ get_header();
 
             <div class="row mt-5">
                 <div class="col-lg-4 column scroll-animation scroll-1">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-two.png" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Adaptable-Homepage.jpg" />
                 </div>
 
                 <div class="col-lg-4 column scroll-animation scroll-2">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-two.png" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-two.jpg" />
                 </div>
 
                 <div class="col-lg-4 column scroll-animation scroll-3">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-two.png" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Adaptable-Homepage.jpg" />
                 </div>
             </div>
         </div>
@@ -271,7 +271,7 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg"
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Live-Editor.gif"
                         class="sec-image-thumbnail thumbnail-right" />
                 </div>
 
@@ -301,8 +301,10 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg"
-                        class="sec-image-thumbnail" />
+                    <figure>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Adaptable-Homepage.jpg"
+                            class="sec-image-thumbnail" />
+                    </figure>
                 </div>
 
                 <div class="col-md-7">
@@ -376,7 +378,7 @@ get_header();
                         </div>
 
                         <div class="rev-slide">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider.jpg" />
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -386,7 +388,7 @@ get_header();
                         </div>
 
                         <div class="rev-slide">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/beats.jpg" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider.jpg" />
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, Ut enim ad minim veniam, quis
                                 nostrud
@@ -397,7 +399,7 @@ get_header();
                         </div>
 
                         <div class="rev-slide">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/faqs.jpg" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider.jpg" />
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore Ut enim ad minim veniam, quis nostrud
@@ -551,10 +553,10 @@ get_header();
                             <li>Powerful Music Player</li>
                             <li>Instant Payments</li>
                             <li>Access to training videos</li>
-							<li>Single Site License</li>
-							<li>12 Months of Updates</li>
-							<li>New designs added every month.</li>
-							<li>Kickass Support</li>
+                            <li>Single Site License</li>
+                            <li>12 Months of Updates</li>
+                            <li>New designs added every month.</li>
+                            <li>Kickass Support</li>
                         </ul>
                         <a href="<?php echo home_url(); ?>/checkout?edd_action=add_to_cart&download_id=924"
                             class="btn-purchase btn-uni bold-7 br-round">Purchase This</a>

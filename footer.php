@@ -61,7 +61,7 @@
 			?>
 
 			<div class="site-info">
-				<?php echo wp_kses_post( get_theme_mod( 'footer_copyright' ) ); ?>
+				<p>© 2020 Producer Themes. All Rights Reserved.</p>
 			</div><!-- .site-info -->
 
 		</div>

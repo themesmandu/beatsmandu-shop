@@ -339,6 +339,12 @@
         font-size: 32px;
     }
 
+    @keyframes moveSlideshow {
+        100% {
+            transform: translateY(-65%);
+        }
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -381,7 +387,7 @@
         display: block;
     }
 
-    .section-purchase .section-heading span{
+    .section-purchase .section-heading span {
         font-size: 16px;
     }
 
@@ -441,7 +447,8 @@
         padding: 30px;
     }
 
-    body.search .page-content .header-heading, .error404 .page-content .header-heading {
+    body.search .page-content .header-heading,
+    .error404 .page-content .header-heading {
         font-size: 28px;
     }
 }
