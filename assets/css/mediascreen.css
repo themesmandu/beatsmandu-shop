@@ -448,6 +448,10 @@
     #footer-menu li:last-child .nav-link {
         margin-right: 0;
     }
+
+    body.log-in #edd_login_form {
+        padding: 20px;
+    }
 }
 
 @media (max-width: 375px) {
