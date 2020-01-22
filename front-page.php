@@ -20,8 +20,19 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-5">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg"
-                        class="thumbnail-right" />
+                    <div class="demoslide">
+                        <div class="demo-slide">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-slide-three.jpg" />
+                        </div>
+
+                        <div class="demo-slide">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-slide-one.jpg" />
+                        </div>
+
+                        <div class="demo-slide">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-slide-two.jpg" />
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-lg-6 col-md-7 col-right">
@@ -44,7 +55,7 @@ get_header();
         </div>
     </section> <!-- end of .section-facilities -->
 
-    <section class="section-features">
+    <section class="section-features" id="featuresection">
         <div class="container">
             <h2 class="section-heading clr-blk align-center">
                 <span class="clr-blu"> Outstanding </span>
@@ -82,7 +93,7 @@ get_header();
                         </div>
 
                         <div class="d-flex align-items-center bg-clr-white">
-                            <span><i class="far fa-newspaper"></i></span>
+                            <span><i class="fas fa-mobile-alt"></i></span>
                             <div class="content">
                                 <h3>Responsive</h3>
                                 <p>This theme is designed to be responsive thus fits automatically on the device used
@@ -94,7 +105,7 @@ get_header();
 
                     <div class="col-md-4 column col-center">
                         <div class="d-flex align-items-center bg-clr-white">
-                            <span><i class="fas fa-mobile-alt"></i></span>
+                            <span><i class="fas fa-percentage"></i></span>
                             <div class="content">
                                 <h3>Coupons & Discounts</h3>
                                 <p>You can create coupon codes or offer discounts to boost the sales.
@@ -103,7 +114,7 @@ get_header();
                         </div>
 
                         <div class="d-flex align-items-center bg-clr-grey">
-                            <span><i class="fas fa-percentage"></i></span>
+                            <span><i class="far fa-newspaper"></i></span>
                             <div class="content">
                                 <h3>Unlimited content</h3>
                                 <p>You can add unlimited beats, blog posts, pages, products and more.
@@ -112,7 +123,7 @@ get_header();
                         </div>
 
                         <div class="d-flex align-items-center bg-clr-white">
-                            <span><i class="fas fa-code"></i></span>
+                            <span><i class="far fa-edit"></i></span>
                             <div class="content">
                                 <h3>Track Beat plays</h3>
                                 <p>Keep track of the number of times a track has been played and purchased from the
@@ -122,9 +133,9 @@ get_header();
                         </div>
 
                         <div class="d-flex align-items-center bg-clr-grey">
-                            <span><i class="far fa-play-circle"></i></span>
+                            <span><i class="fas fa-plus"></i></span>
                             <div class="content">
-                                <h3>Track Beat Plays</h3>
+                                <h3>Add Unlimited Beats</h3>
                                 <p>The built-in beat store allows you to add unlimited beats and set your own prices.
                                 </p>
                             </div>
@@ -151,7 +162,7 @@ get_header();
                         </div>
 
                         <div class="d-flex align-items-center bg-clr-grey">
-                            <span><i class="far fa-envelope"></i></span>
+                            <span><i class="fas fa-code"></i></span>
                             <div class="content">
                                 <h3>Custom CSS</h3>
                                 <p>Easily add custom CSS to overwrite styling to meet your personal style.
@@ -174,7 +185,7 @@ get_header();
         </div> <!-- end of container -->
     </section> <!-- end of .section-features -->
 
-    <section class="section-demo-import">
+    <section id="demoimport" class="section-demo-import">
         <div class="container">
             <h2 class="section-heading">
                 <span class="underline clr-blu">Website Demo</span>
@@ -184,16 +195,22 @@ get_header();
             </h2>
 
             <div class="row mt-5">
-                <div class="col-lg-4 column scroll-animation scroll-1">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Adaptable-Homepage.jpg" />
+                <div class="col-lg-4 column">
+                    <a href="https://producerthemes.com/demo/beatsmandu" target="_blank">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-one.jpg" />
+                    </a>
                 </div>
 
-                <div class="col-lg-4 column scroll-animation scroll-2">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-two.jpg" />
+                <div class="col-lg-4 column">
+                    <a href="https://producerthemes.com/demo/beatsmandu-blue" target="_blank">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-two.jpg" />
+                    </a>
                 </div>
 
-                <div class="col-lg-4 column scroll-animation scroll-3">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Adaptable-Homepage.jpg" />
+                <div class="col-lg-4 column">
+                    <a href="https://producerthemes.com/demo/beatsmandu-blue" target="_blank">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-three.jpg" />
+                    </a>
                 </div>
             </div>
         </div>
@@ -203,7 +220,7 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg"
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oneclickdemoimport.gif"
                         class="sec-image-thumbnail thumbnail-right" />
 
                     <div class="imageapear">
@@ -221,18 +238,14 @@ get_header();
                     </h2>
 
                     <ul class="col-count-2 list-check">
-                        <li><i class="checked"></i>Instant Beat Delivery</li>
+                        <li><i class="checked"></i>Set up your site exactly as the demo</li>
+                        <li><i class="checked"></i>Replace the demo contents with yours</li>
+                        <li><i class="checked"></i>Add your beats</li>
                         <li><i class="checked"></i>Create Coupon Codes And Discounts</li>
-                        <li><i class="checked"></i>Provide Free Beat Downloads</li>
-                        <li><i class="checked"></i>Sort By Genre, Category, Price & Tags</li>
-                        <li><i class="checked"></i>Generate Unlimited Licenses </li>
-                        <li><i class="checked"></i>Sales Reports & Charts</li>
-                        <li><i class="checked"></i>Keep Tabs On Beat Plays</li>
-                        <li><i class="checked"></i>Instant Paypal Payments</li>
-                        <li><i class="checked"></i>Colorful Audio Player</li>
-                        <li><i class="checked"></i>Mp3, Wav, Zip Downloads</li>
-                        <li><i class="checked"></i>Comprise Music Contracts</li>
-                        <li><i class="checked"></i>Social Media Sharing</li>
+                        <li><i class="checked"></i>Create Licenses</li>
+                        <li><i class="checked"></i>Add payments</li>
+                        <li><i class="checked"></i>Set up your own blog</li>
+                        <li><i class="checked"></i>Set up basic SEO for your site</li>
                     </ul>
                 </div>
             </div> <!-- end of row -->
@@ -254,12 +267,7 @@ get_header();
 					</h2>
 
 					<ul class="col-count-2 list-check">
-						<li><i class="checked"></i>Sell Digital Or Physical Music Albums</li>
-						<li><i class="checked"></i>Sell Clothing (T-Shirts, Hoodies, Cap, Etc.)</li>
-						<li><i class="checked"></i>Sell Music Kits, Novelty Accessories Or Software </li>
-						<li><i class="checked"></i>Sort By Categories</li>
-						<li><i class="checked"></i>Show Related Products</li>
-						<li><i class="checked"></i>Link To External Products </li>
+						<li><i class="checked"></i>Colors</li>
 					</ul>
 					<a href="#" class="btn btn-uni br-round">view store</a>
 				</div>
@@ -331,7 +339,7 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/offer.jpg"
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/addcontent.gif"
                         class="sec-image-thumbnail thumbnail-right" />
                 </div>
 
@@ -343,12 +351,12 @@ get_header();
                     </h2>
 
                     <ul class="col-count-2 list-check">
-                        <li><i class="checked"></i><a href="#">About Us</a></li>
-                        <li><i class="checked"></i><a href="#">Services</a></li>
-                        <li><i class="checked"></i><a href="#">Contact</a></li>
-                        <li><i class="checked"></i><a href="#">Photo Gallery</a></li>
-                        <li><i class="checked"></i><a href="#">Video Gallery</a></li>
-                        <li><i class="checked"></i><a href="#">Blog</a></li>
+                        <li><i class="checked"></i>About Us</li>
+                        <li><i class="checked"></i>Services</li>
+                        <li><i class="checked"></i>Contact</li>
+                        <li><i class="checked"></i>Photo Gallery</li>
+                        <li><i class="checked"></i>Video Gallery</li>
+                        <li><i class="checked"></i>Blog</li>
                     </ul>
                     <a href="#" class="btn btn-uni br-round">view store</a>
                 </div>

@@ -25,7 +25,7 @@ jQuery(document).ready(function ($) {
 
     // Smooth Scrolling For Buy Button To Its Content
 
-    $('.btn-buynow').click(function (event) {
+    $('.btn-buynow, .btn-features, .btn.demos').click(function (event) {
         event.preventDefault();
         $('html,body').animate({
             scrollTop: $(this.hash).offset().top

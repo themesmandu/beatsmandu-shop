@@ -63,6 +63,10 @@
         order: unset;
     }
 
+    .section-demo-import .btn {
+        margin: 0 0 36px;
+    }
+
     .section-editor-info,
     .section-purchase {
         background-size: contain;
@@ -189,6 +193,10 @@
     .sec-image-thumbnail,
     .section-facilities .thumbnail-right {
         margin-bottom: 28px;
+    }
+
+    .section-facilities .demoslide {
+        margin-bottom: 32px;
     }
 
     .section-review {

@@ -3046,3 +3046,21 @@ jQuery(document).ready(function ($) {
         });
     });
 })
+
+jQuery(document).ready(function ($) {
+    $(document).on('ready', function () {
+        $(".demoslide").slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            dots: false,
+            fade: true,
+            speed: 500,
+            infinite: true,
+            cssEase: 'ease-in-out',
+            touchThreshold: 100
+        });
+    });
+});
