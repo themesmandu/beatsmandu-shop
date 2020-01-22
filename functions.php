@@ -226,7 +226,7 @@ function beatsmandu_shop_add_menu_item( $items, $args ) {
 			if ( is_user_logged_in() ) {
 				$items .= '<li class= "logged-in menu-item ' . $class . '"><a class="nav-link" href = ' . home_url() . '/my-account>My Account</a></li>';
 			} else {
-				$items .= '<li class= "logged-in menu-item ' . $class . '"><a class="nav-link" href = ' . home_url() . '/my-account>Sign Up</a></li>';
+				$items .= '<li class= "logged-in menu-item ' . $class . '"><a class="nav-link" href = ' . home_url() . '/my-account>Log In</a></li>';
 			}
 		}
 	}

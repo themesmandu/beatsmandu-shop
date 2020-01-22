@@ -27,7 +27,7 @@ if ( is_user_logged_in() ) {
 	echo do_shortcode( '[purchase_history]' );
 	?>
 	</div>
-	
+
 	<div class="download-history">
 		<h3 class="uppercase clr-blu bold-8">Download History</h3>
 		<?php
@@ -37,11 +37,6 @@ if ( is_user_logged_in() ) {
 	<?php
 } else {
 	?>
-	<div class="col-md-6 col-register">
-	<?php
-	echo do_shortcode( '[edd_register]' );
-	?>
-	</div>
 	<div class="col-md-6 col-login">
 	<?php
 	echo do_shortcode( '[edd_login]' );
