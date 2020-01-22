@@ -1817,6 +1817,10 @@ body.log-in .edd-lost-password {
     margin: 0;
 }
 
+body.log-in .edd-submit, [type=submit].edd-submit {
+    padding: 10px 38px;
+}
+
 /* -- Footer Styles -- */
 
 #footer {
