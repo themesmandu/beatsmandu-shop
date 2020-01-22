@@ -196,19 +196,19 @@ get_header();
 
             <div class="row mt-5">
                 <div class="col-lg-4 column">
-                    <a href="https://producerthemes.com/demo/beatsmandu" target="_blank">
+                    <a href="https://producerthemes.com/demo/thered" target="_blank">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-slide-one.jpg" />
                     </a>
                 </div>
 
                 <div class="col-lg-4 column">
-                    <a href="https://producerthemes.com/demo/beatsmandu-blue" target="_blank">
+                    <a href="https://producerthemes.com/demo/theblue" target="_blank">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-slide-two.jpg" />
                     </a>
                 </div>
 
                 <div class="col-lg-4 column">
-                    <a href="https://producerthemes.com/demo/beatsmandu-alternet" target="_blank">
+                    <a href="https://producerthemes.com/demo/thedark" target="_blank">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-slide-three.jpg" />
                     </a>
                 </div>

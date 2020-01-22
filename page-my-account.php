@@ -21,14 +21,14 @@ get_header();
 <?php
 if ( is_user_logged_in() ) {
 	?>
-	<div class="purchase-history">
+	<div class="purchase-history account-page">
 		<h3 class="uppercase clr-blu bold-8">Purchase History</h3>
 	<?php
 	echo do_shortcode( '[purchase_history]' );
 	?>
 	</div>
 
-	<div class="download-history">
+	<div class="download-history account-page">
 		<h3 class="uppercase clr-blu bold-8">Download History</h3>
 		<?php
 		echo do_shortcode( '[download_history]' );
@@ -37,7 +37,7 @@ if ( is_user_logged_in() ) {
 	<?php
 } else {
 	?>
-	<div class="col-md-6 col-login">
+	<div class="col-lg-6 col-md-8  col-login">
 	<?php
 	echo do_shortcode( '[edd_login]' );
 	?>

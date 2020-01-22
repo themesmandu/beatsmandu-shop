@@ -1753,6 +1753,7 @@ section.widget p {
 #rememberme {
     width: auto;
     vertical-align: middle;
+    margin-right: 5px;
 }
 
 #edd-purchase-button,
@@ -1784,9 +1785,36 @@ section.widget p {
     margin-bottom: 45px;
 }
 
+.edd-login-remember label {
+    display: flex;
+}
+
 #edd_user_history td,
 #edd_user_history th {
     padding: 7px;
+}
+
+/* -- Styles For Only LogIn Page -- */
+
+body.log-in #content,
+body.account-page #content {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+body.log-in .col-login {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+body.log-in #edd_login_form {
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+    padding: 42px;
+}
+
+body.log-in .edd-lost-password {
+    margin: 0;
 }
 
 /* -- Footer Styles -- */
