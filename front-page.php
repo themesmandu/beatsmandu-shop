@@ -197,19 +197,19 @@ get_header();
             <div class="row mt-5">
                 <div class="col-lg-4 column">
                     <a href="https://producerthemes.com/demo/beatsmandu" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-one.jpg" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-slide-one.jpg" />
                     </a>
                 </div>
 
                 <div class="col-lg-4 column">
                     <a href="https://producerthemes.com/demo/beatsmandu-blue" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-two.jpg" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-slide-two.jpg" />
                     </a>
                 </div>
 
                 <div class="col-lg-4 column">
                     <a href="https://producerthemes.com/demo/beatsmandu-blue" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-three.jpg" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-slide-three.jpg" />
                     </a>
                 </div>
             </div>
@@ -543,10 +543,8 @@ get_header();
                             <li>New designs added every month.</li>
                             <li>Kickass Support</li>
                         </ul>
-                        <a href="<?php echo home_url(); ?>/checkout?edd_action=add_to_cart&download_id=924"
+                        <a href="<?php echo home_url(); ?>/checkout?edd_action=add_to_cart&download_id=18"
                             class="btn-purchase btn-uni bold-7 br-round">Purchase This</a>
-
-                        <p class="clr-blu bold-5">Both paypal And Credit card accepted</p>
                     </div>
                 </div> <!-- end of .column -->
             </div> <!-- end of .row -->
