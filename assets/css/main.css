@@ -178,6 +178,7 @@ h6 {
 
 .col-count-2 {
     column-count: 2;
+    column-gap: 40px;
 }
 
 .col-right {
@@ -349,6 +350,7 @@ h6 {
     text-transform: uppercase;
     padding: 5px 0;
     transition: .3s;
+    border-bottom: 1px solid transparent;
 }
 
 .current-menu-item .nav-link,
@@ -662,6 +664,11 @@ section .btn {
 
 .section-demo-import .scroll-animation {
     margin-bottom: 22px;
+}
+
+.section-demo-import .btn {
+    font-size: 15px;
+    padding: 12px 24px;
 }
 
 /* -- Section Personal Beats Store -- */
@@ -1967,6 +1974,10 @@ body.edd-success #primary {
     margin: 0 auto;
 }
 
+body.edd-checkout #content {
+    min-height: 70vh;
+}
+
 .edd-checkout .card,
 .edd-checkout .card-body,
 #edd_checkout_form_wrap fieldset,
@@ -2097,6 +2108,8 @@ body.edd-success #primary {
     background-color: #162a64;
     border-radius: 0;
     padding: 10px 18px;
+    width: 100%;
+    max-width: 385px;
 }
 
 #edd_purchase_receipt tbody tr:last-child {
@@ -2167,4 +2180,12 @@ table#edd_purchase_receipt_products .edd_download_file {
 #edd-privacy-policy-agreement label {
     text-transform: capitalize;
     margin: 0;
+}
+
+#edd_checkout_form_wrap input[type=checkbox]+label {
+    font-size: 11px;
+}
+
+#edd_checkout_form_wrap .edd-payment-icons img.payment-icon {
+    max-height: 48px;
 }

@@ -53,12 +53,12 @@
             <?php if ( is_front_page() && ! is_home() ) : ?>
             <div class="header-content align-center">
                 <div class="container">
-                    <h2 class="header-heading uppercase"> wordpress theme for beatsmakers</h2>
+                    <h1 class="header-heading uppercase"> wordpress theme for beatsmakers</h1>
 
                     <p>Highly customizable template that enables you to create your music business. Build your brand and sell music, beats, loops, products, and more!</p>
 
-                    <a href="#" class="btn btn-uni br-round">3 Demos</a>
-                    <a href="#" class="btn btn-uni btn-white br-round">Features</a>
+                    <a href="#demoimport" class="btn btn-uni br-round demos">Demos</a>
+                    <a href="#featuresection" class="btn btn-uni btn-white br-round btn-features">Features</a>
                 </div>
             </div>
             <?php endif; ?>
