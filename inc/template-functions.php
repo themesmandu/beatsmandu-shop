@@ -53,6 +53,14 @@ function beatsmandu_shop_body_classes( $classes ) {
 		$classes[] = 'no-sidebar';
 	}
 
+	if ( is_page( 'my-account' ) ) {
+		if ( is_user_logged_in() ) {
+			$classes[] = 'account-page';
+		} else {
+			$classes[] = 'log-in';
+		}
+	}
+
 	return $classes;
 }
 add_filter( 'body_class', 'beatsmandu_shop_body_classes' );
