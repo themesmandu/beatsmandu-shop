@@ -2221,3 +2221,31 @@ table#edd_purchase_receipt_products .edd_download_file {
 #edd_checkout_form_wrap .edd-payment-icons img.payment-icon {
     max-height: 48px;
 }
+
+.edd-checkout .edd-alert-error {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.edd-checkout .edd-alert-error .edd_error {
+    font-size: 0;
+    padding: 10px 15px;
+    background-color: #f2dede;
+    margin-bottom: 15px !important;
+    max-width: 385px;
+}
+
+.edd-checkout .edd-alert-error .edd_error:last-child {
+    margin-bottom: 0 !important;
+}
+
+.edd-alert-error #edd_error_agree_to_terms:before {
+    content: 'You must agree to the terms of use';
+    font-size: 14px;
+}
+
+.edd-alert-error #edd_error_agree_to_privacy_policy:before {
+    content: 'You must agree to the privacy policy';
+    font-size: 14px;
+}
