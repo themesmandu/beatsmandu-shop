@@ -2249,3 +2249,8 @@ table#edd_purchase_receipt_products .edd_download_file {
     content: 'You must agree to the privacy policy';
     font-size: 14px;
 }
+
+.edd-alert-error #edd_error_recovery_requires_login:before {
+    content: 'To complete this payment, please login to your account.';
+    font-size: 14px;
+}
