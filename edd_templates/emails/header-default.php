@@ -75,7 +75,7 @@ $heading    = EDD()->emails->get_heading();
 				<td align="center" valign="top">
 					<?php if( ! empty( $header_img ) ) : ?>
 						<div id="template_header_image">
-							<?php echo '<p style="margin-top:0;"><img src="' . esc_url( $header_img ) . '" alt="' . get_bloginfo( 'name' ) . '" /></p>'; ?>
+							<?php echo '<img src="' . esc_url( $header_img ) . '" alt="' . get_bloginfo( 'name' ) . '" />'; ?>
 						</div>
 					<?php endif; ?>
 					<table border="0" cellpadding="0" cellspacing="0" width="520" id="template_container" style="<?php echo $template_container; ?>">
