@@ -419,94 +419,52 @@ get_header();
 
                 <tbody>
                     <tr>
-                        <td>AInstant Beat Downloads</td>
-                        <td><span class="cross">&#10007;</span></td>
-                        <td><span class="tick">&#10003;</span></td>
-                        <td><span class="cross">&#10007;</span></td>
-                    </tr>
-
-                    <tr>
-                        <td>Coupons & Discounts</td>
-                        <td><span class="tick">&#10003;</span></td>
-                        <td><span class="tick">&#10003;</span></td>
-                        <td><span class="cross">&#10007;</span></td>
-                    </tr>
-
-                    <tr>
-                        <td>Sell Products</td>
-                        <td><span class="tick">&#10003;</span></td>
-                        <td><span class="tick">&#10003;</span></td>
-                        <td><span class="cross">&#10007;</span></td>
-                    </tr>
-
-                    <tr>
                         <td>Unlimited Pages</td>
                         <td><span class="tick">&#10003;</span></td>
-                        <td><span class="tick">&#10003;</span></td>
+                        <td><span class="cross">&#10007;</span></td>
                         <td><span class="cross">&#10007;</span></td>
                     </tr>
 
                     <tr>
-                        <td>News Blog</td>
+                        <td>Full Featured WordPress Blog</td>
                         <td><span class="tick">&#10003;</span></td>
-                        <td><span class="tick">&#10003;</span></td>
+                        <td><span class="cross">&#10007;</span></td>
                         <td><span class="cross">&#10007;</span></td>
                     </tr>
 
                     <tr>
                         <td>Add Features ( WP Plugins )</td>
                         <td><span class="tick">&#10003;</span></td>
-                        <td><span class="tick">&#10003;</span></td>
+                        <td><span class="cross">&#10007;</span></td>
                         <td><span class="cross">&#10007;</span></td>
                     </tr>
 
                     <tr>
                         <td>Create Landing Pages</td>
                         <td><span class="tick">&#10003;</span></td>
-                        <td><span class="tick">&#10003;</span></td>
                         <td><span class="cross">&#10007;</span></td>
-                    </tr>
-
-                    <tr>
-                        <td>Photo & Video Gallery</td>
-                        <td><span class="tick">&#10003;</span></td>
-                        <td><span class="tick">&#10003;</span></td>
                         <td><span class="cross">&#10007;</span></td>
                     </tr>
 
                     <tr>
                         <td>SEO Features</td>
                         <td><span class="tick">&#10003;</span></td>
-                        <td><span class="tick">&#10003;</span></td>
+                        <td><span class="cross">&#10007;</span></td>
                         <td><span class="cross">&#10007;</span></td>
                     </tr>
 
                     <tr>
                         <td>Customize Code</td>
                         <td><span class="tick">&#10003;</span></td>
-                        <td><span class="tick">&#10003;</span></td>
+                        <td><span class="cross">&#10007;</span></td>
                         <td><span class="cross">&#10007;</span></td>
                     </tr>
 
                     <tr>
-                        <td>Marketing Graphics</td>
-                        <td><span>90 Free Graphics</span></td>
-                        <td><span>90 Free Graphics</span></td>
-                        <td><span>90 Free Graphics</span></td>
-                    </tr>
-
-                    <tr>
-                        <td>Price</td>
-                        <td><span class="price"> $55 </span></td>
-                        <td><span class="price"> $239 / Year </span></td>
-                        <td><span class="price"> $239 / Year </span></td>
-                    </tr>
-
-                    <tr>
-                        <td><strong>Website Hosting <span class="required">*</span></strong></td>
-                        <td><span class="strong">Not Included</span></td>
-                        <td><span class="strong">Hosted ( Limited Pages )</span></td>
-                        <td><span class="strong">Hosted ( 1 Page Profile )</span></td>
+                        <td>One Time Price</td>
+                        <td><span class="tick">&#10003;</span></td>
+                        <td><span class="cross">&#10007;</span></td>
+                        <td><span class="cross">&#10007;</span></td>
                     </tr>
                 </tbody>
             </table>
