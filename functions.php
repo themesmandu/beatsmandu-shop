@@ -224,17 +224,15 @@ function beatsmandu_shop_add_menu_item( $items, $args ) {
 				$class = 'current-menu-item';
 			}
 			if ( is_user_logged_in() ) {
-				$items .= '<li class= "logged-in menu-item ' . $class . '"><a class="nav-link" href = ' . home_url() . '/my-account>My Account</a></li>';
+				$items .= '<li class= "menu-item ' . $class . '"><a class="nav-link" href = ' . home_url() . '/my-account>My Account</a></li>';
 			} else {
-				$items .= '<li class= "logged-in menu-item ' . $class . '"><a class="nav-link" href = ' . home_url() . '/my-account>Log In</a></li>';
+				$items .= '<li class= "menu-item ' . $class . '"><a class="nav-link" href = ' . home_url() . '/my-account>Log In</a></li>';
 			}
 		}
 	}
 	return $items;
 }
-if ( get_theme_mod( 'mainmenu_cart_toggle', true ) ) {
 	add_filter( 'wp_nav_menu_items', 'beatsmandu_shop_add_menu_item', 10, 2 );
-}
 
 /**
  * Load theme required files.

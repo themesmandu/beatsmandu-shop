@@ -16,7 +16,7 @@ get_header();
 ?>
 
 <div class="container">
-		<main id="main" class="site-main edd-pages <?php echo is_user_logged_in() ? '' : 'row'; ?>">
+	<main id="main" class="site-main edd-pages <?php echo is_user_logged_in() ? '' : 'row'; ?>">
 
 <?php
 if ( is_user_logged_in() ) {
