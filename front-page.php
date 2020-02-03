@@ -501,7 +501,7 @@ get_header();
                             <li>New designs added every month.</li>
                             <li>Kickass Support</li>
                         </ul>
-                        <a href="<?php echo home_url(); ?>/checkout?edd_action=add_to_cart&download_id=18"
+                        <a href="<?php echo home_url(); ?>/checkout?edd_action=add_to_cart&download_id=154"
                             class="btn-purchase btn-uni bold-7 br-round">Purchase This</a>
                     </div>
                 </div> <!-- end of .column -->
