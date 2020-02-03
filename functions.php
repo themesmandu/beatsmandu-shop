@@ -239,11 +239,11 @@ function beatsmandu_shop_add_menu_item( $items, $args ) {
  */
 require get_template_directory() . '/inc/init.php';
 
-function wildspirit_add_classes_on_link_attributes( $classes ) {
+function beatsmandu_shop_add_classes_on_link_attributes( $classes ) {
 	$classes['class'] = 'nav-link';
 	return $classes;
 }
-add_filter( 'nav_menu_link_attributes', 'wildspirit_add_classes_on_link_attributes' );
+add_filter( 'nav_menu_link_attributes', 'beatsmandu_shop_add_classes_on_link_attributes' );
 
 /** Post Widget with images **/
 require get_template_directory() . '/inc/post_widget.php';
