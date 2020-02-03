@@ -249,3 +249,4 @@ add_filter( 'nav_menu_link_attributes', 'wildspirit_add_classes_on_link_attribut
 require get_template_directory() . '/inc/post_widget.php';
 
 
+
