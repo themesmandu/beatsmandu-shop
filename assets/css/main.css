@@ -1797,7 +1797,8 @@ section.widget p {
 /* -- Styles For Only LogIn Page -- */
 
 body.log-in #content,
-body.account-page #content {
+body.account-page #content,
+body.logged-in #content {
     min-height: 70vh;
     display: flex;
     align-items: center;
