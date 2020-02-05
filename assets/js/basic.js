@@ -4,7 +4,7 @@ jQuery(document).ready(function ($) {
 
     $(window).scroll(function () {
         var height = $(window).scrollTop();
-        if (height > 200) {
+        if (height > 20) {
             $('.main-navigation').addClass('fixed');
         } else {
             $('.main-navigation').removeClass('fixed');
