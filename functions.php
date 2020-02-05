@@ -249,3 +249,4 @@ add_filter( 'nav_menu_link_attributes', 'beatsmandu_shop_add_classes_on_link_att
 require get_template_directory() . '/inc/post_widget.php';
 
 
+
