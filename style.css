@@ -186,7 +186,7 @@ figcaption,
 .up-btn {
     position: fixed;
     visibility: hidden;
-    bottom: 5%;
+    bottom: 15%;
     right: 15px;
     outline: none;
     background: rgba(0, 0, 0, .3);
