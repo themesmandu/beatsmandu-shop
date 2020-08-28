@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     word-break: break-word;
@@ -40,7 +40,7 @@ a:hover {
 p {
     font-size: 15px;
     color: #282b30;
-    line-height: 1.8;
+    line-height: 2.1;
 }
 
 p:last-child,
@@ -165,13 +165,28 @@ table caption {
 
 /* -- Headings Styles -- */
 
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-weight: 700;
+    line-height: 1.5;
 }
 
 /* -- Added Other Created Styles  -- */
@@ -533,7 +548,6 @@ section {
 .list-check li a {
     color: #132557;
     margin-bottom: 10px;
-    text-indent: -28px;
 }
 
 section .btn {
@@ -660,6 +674,15 @@ section .btn {
 .section-demo-import .section-sub-heading {
     max-width: 580px;
     font-weight: 400;
+}
+
+.section-demo-import .column {
+    margin-bottom: 30px;
+}
+
+.section-demo-import .column:nth-last-child(1),
+.section-demo-import .column:nth-last-child(2) {
+    margin: 0;
 }
 
 .section-demo-import .scroll-animation {
@@ -1797,8 +1820,7 @@ section.widget p {
 /* -- Styles For Only LogIn Page -- */
 
 body.log-in #content,
-body.account-page #content,
-body.logged-in #content {
+body.account-page #content {
     min-height: 70vh;
     display: flex;
     align-items: center;

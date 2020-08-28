@@ -109,6 +109,10 @@
     .section-purchase .column:last-child {
         margin-bottom: 0;
     }
+	
+	.page-content .header-heading {
+		font-size: 46px;
+	}
 
     #sidebar {
         margin-top: 50px;
@@ -235,7 +239,7 @@
     }
 
     .page-content .header-heading {
-        font-size: 48px;
+        font-size: 32px;
     }
 
     .blog-article .col-content {
@@ -278,6 +282,10 @@
 
     .section-demo-import .row.mt-5 {
         margin-top: 0px !important;
+    }
+
+    .section-demo-import .column:nth-last-child(2) {
+        margin-bottom: 30px;
     }
 
     section .btn {
@@ -364,7 +372,7 @@
     .section-facilities .section-heading span,
     .section-review h2,
     .page-content .header-heading {
-        font-size: 42px;
+        font-size: 26px;
     }
 
     .section-sub-heading {

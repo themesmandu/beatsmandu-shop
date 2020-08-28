@@ -195,19 +195,19 @@ get_header();
             </h2>
 
             <div class="row mt-5">
-                <div class="col-lg-4 column">
+                <div class="col-lg-3 col-md-6 column">
                     <a href="https://producerthemes.com/demo/thered" target="_blank">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-slide-one.jpg" />
                     </a>
                 </div>
 
-                <div class="col-lg-4 column">
+                <div class="col-lg-3 col-md-6 column">
                     <a href="https://producerthemes.com/demo/theblue" target="_blank">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-slide-two.jpg" />
                     </a>
                 </div>
 
-                <div class="col-lg-4 column">
+                <div class="col-lg-3 col-md-6 column">
                     <a href="https://producerthemes.com/demo/thedark" target="_blank">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/demo-slide-three.jpg" />
                     </a>
@@ -355,41 +355,16 @@ get_header();
                         <div class="rev-slide">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider.jpg" />
                             <p>
-                                Lorem ipsum dolor sit amet, Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                                <span>Pedro Toribio</span>
+                                When I discovered about Producerthemes, I knew I could easily set up my store and control everything. The decision I made was right! 
+                                <span>Beat Producer- Alex</span>
                             </p>
                         </div>
 
                         <div class="rev-slide">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider.jpg" />
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut
-                                <span>Toribio Pedro</span>
-                            </p>
-                        </div>
-
-                        <div class="rev-slide">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider.jpg" />
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, Ut enim ad minim veniam, quis
-                                nostrud
-                                exercitation ullamco laboris nisi ut sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                                <span>Lorem ipsum</span>
-                            </p>
-                        </div>
-
-                        <div class="rev-slide">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider.jpg" />
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut magna aliqua.
-                                <span>Quis Nostrud</span>
+                                Easy! Yes it is easy to set up your own site in minutes. The support is unbelieveable. Thanks guys.
+                                <span>NaranGop</span>
                             </p>
                         </div>
                     </div>
